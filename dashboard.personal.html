@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="navbar-nav w-100">
-                <a href="dashboard.html" class="nav-item nav-link mb-2 active"><i
+                <a href="dashboard.html" class="nav-item nav-link mb-2"><i
                         class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
@@ -95,12 +95,12 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                    <a href="#" class="nav-link dropdown-toggle active show" data-bs-toggle="dropdown" aria-expanded="true"><span class="icon-sm me-2"><i
                                 class="fa-solid fa-user-secret"></i></span>Personal proxy<span
                             class="icon-sm position-absolute me-3 end-0"><i
                                 class="fa-solid fa-caret-down"></i></span></a>
-                    <div class="dropdown-menu bg-transparent border-0">
-                        <a href="dashboard.personal.html" class="dropdown-item">My proxies</a>
+                    <div class="dropdown-menu bg-transparent border-0 show" data-bs-popper="static">
+                        <a href="dashboard.personal.html" class="dropdown-item active">My proxies</a>
                         <a href="#" class="dropdown-item">Tariff</a>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
     <div class="content">
         <!-- Navbar Start -->
         <header class="header">
-            <nav class="navbar navbar-expand navbar-light px-4 py-2" style="background-color: #fff !important;">
+            <nav class="navbar navbar-expand navbar-light px-4 py-2">
                 <a id="Sidebar-Toggler" href="#" class="sidebar-toggler flex-shrink-0">
                     <div class="icon-sm"><img src="assets/images/dashboard/toglleline.png" /></div>
                 </a>
@@ -192,6 +192,16 @@
                     </div>
                 </div>
             </nav>
+            <div class="nav-box py-3 px-4">
+                <h3>Packages</h3>
+                <ul class="m-0 p-0 pt-2 align-items-center">
+                    <li class="ul-item">main</li>
+                    <i>/</i>
+                    <li class="ul-item">services</li>
+                    <i>/</i>
+                    <li class="ul-item">personal</li>
+                </ul>
+            </div>
         </header>
         <!-- Navbar End -->
 
@@ -199,252 +209,96 @@
         <section class="contents">
             <div class="container-fluid">
                 <div class="row">
-                    <!-- Start Active services -->
-                    <div class="col-md-6 mb-2" id="active-services">
-                        <div class="active-services mt-4 box">
+                    <!-- Start Active Packages -->
+                    <div class="col-md-12 mb-2" id="active-packages">
+                        <div class="active-packages mt-4 box">
                             <div class="header-title">
-                                <h5>Active services</h5>
+                                <h5>Active packages</h5>
                             </div>
-                            <div class="row p-3 pt-0">
-                                <div class="col-md-6">
-                                    <div class="service-box box">
-                                        <div class="header-title">
-                                            <span class="icon-sm me-2 justify-content-center"><img
-                                                    src="assets/images/dashboard/active services/server.png" /></span><span>Residential
-                                                proxy</span>
+                            <div class="px-4 py-3 my-1">
+                                <div class="col-md-12 notification info">
+                                    <p class="m-0 p-0 fw-bold"> After starting the package do not forget please to insert your IP working in the necessary field </p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-1 w-3 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
+                                            </div>
                                         </div>
-                                        <div class="content-box justify-content-center">
-                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
-                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
-                                            <span class="mt-2">Request test period</span>
+                                        <div class="col-md-2 w-5 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
+                                            </div>
                                         </div>
-                                        <div class="table-box hidden">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col"></th>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Expires</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"><a><i
-                                                                    class="fa-solid fa-play"></a></i></th>
-                                                        <td>personal proxy</td>
-                                                        <td>4 days, 21 hours</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"></th>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"></th>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="header-title text-end">
-                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
-                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                        <div class="col-md-2 w-24 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 w-17 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 w-23 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 w-15 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 w-10 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 w-3 packages-box box p-0">
+                                            <div class="header-title">
+                                                <h6></h6>
+                                            </div>
+                                            <div class="content-box justify-content-center">
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="service-box box">
-                                        <div class="header-title">
-                                            <span class="icon-sm me-2 justify-content-center"><img
-                                                    src="assets/images/dashboard/active services/diamond.png" /></span><span>Exclusive
-                                                plus</span>
-                                        </div>
-                                        <div class="content-box justify-content-center">
-                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
-                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
-                                            <span class="mt-2">Request test period</span>
-                                        </div>
-                                        <div class="table-box hidden">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col"></th>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Expires</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"><a><i
-                                                                    class="fa-solid fa-play"></a></i></th>
-                                                        <td>personal proxy</td>
-                                                        <td>4 days, 21 hours</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="header-title text-end">
-                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
-                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="service-box box">
-                                        <div class="header-title">
-                                            <span class="icon-sm me-2 justify-content-center"><img
-                                                    src="assets/images/dashboard/active services/spyware.png" /></span><span>Personal
-                                                proxy</span>
-                                        </div>
-                                        <div class="content-box justify-content-center  hidden">
-                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
-                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
-                                            <span class="mt-2">Request test period</span>
-                                        </div>
-                                        <div class="table-box">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col"></th>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Expires</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"><a><i
-                                                                    class="fa-solid fa-play"></a></i></th>
-                                                        <td>personal proxy</td>
-                                                        <td>4 days, 21 hours</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="header-title text-end">
-                                                <a href="dashboard.personal.html" class="btn btn-primary py-1 px-2">more information <i
-                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="service-box box">
-                                        <div class="header-title">
-                                            <span class="icon-sm me-2 justify-content-center"><img
-                                                    src="assets/images/dashboard/active services/leaf.png" /></span><span>Server
-                                                proxy</span>
-                                        </div>
-                                        <div class="content-box justify-content-center">
-                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
-                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
-                                            <span class="mt-2">Request test period</span>
-                                        </div>
-                                        <div class="table-box hidden">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col"></th>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Expires</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"><a><i
-                                                                    class="fa-solid fa-play"></a></i></th>
-                                                        <td>personal proxy</td>
-                                                        <td>4 days, 21 hours</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="header-title text-end">
-                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
-                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="service-box box">
-                                        <div class="header-title">
-                                            <span class="icon-sm me-2 justify-content-center"><img
-                                                    src="assets/images/dashboard/active services/smartphone.png" /></span><span>Mobdile
-                                                proxy</span>
-                                        </div>
-                                        <div class="content-box justify-content-center">
-                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
-                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
-                                            <span class="mt-2">Request test period</span>
-                                        </div>
-                                        <div class="table-box hidden">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col"></th>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Expires</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"><a><i
-                                                                    class="fa-solid fa-play"></a></i></th>
-                                                        <td>personal proxy</td>
-                                                        <td>4 days, 21 hours</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="header-title text-end">
-                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
-                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="service-box box">
-                                        <div class="header-title">
-                                            <span class="icon-sm me-2 justify-content-center"><img
-                                                    src="assets/images/dashboard/active services/hide.png" /></span><span
-                                                class="text-uppercase">vpn</span>
-                                        </div>
-                                        <div class="content-box justify-content-center">
-                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
-                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
-                                            <span class="mt-2" style="visibility: hidden;">Request test period</span>
-                                        </div>
-                                        <div class="table-box hidden">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col"></th>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Expires</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-center" scope="row"><a><i
-                                                                    class="fa-solid fa-play"></a></i></th>
-                                                        <td>personal proxy</td>
-                                                        <td>4 days, 21 hours</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="header-title text-end">
-                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
-                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col-md-12">
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Active services -->
-                    <!-- Start Article -->
-                    <div class="col-md-3 mb-2" id="article">
-                        <div class="article mt-4">
+                    <!-- End Active Packages -->
+                </div>
+                <div class="row">
+                    <!-- Start Buy Personal Proxy -->
+                    <div class="col-md-9 mb-2" id="buy-personal-proxy">
+                        <div class="buy-personal-proxy mt-4">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="balance news-box box">
@@ -561,10 +415,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Article -->
-                    <!-- Start Contacts -->
-                    <div class="col-md-3 pe-0" id="contacts">
-                        <div class="contacts">
+                    <!-- End Buy Personal Proxy -->
+                    <!-- Start Notifications -->
+                    <div class="col-md-3  mb-2" id="notifications">
+                        <div class="notifications mt-4">
                             <h6>contacts</h6>
                             <nav class="navbar navbar-light">
                                 <div class="navbar-nav w-100">
@@ -579,7 +433,7 @@
                             </nav>
                         </div>
                     </div>
-                    <!-- End Contacts -->
+                    <!-- End Notifications -->
                 </div>
             </div>
         </section>

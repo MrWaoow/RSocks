@@ -27,10 +27,31 @@
 
 
     // Sidebar Toggler
-    $('.sidebar-toggler').click(function () {
+    const sidebarToggler = document.getElementById("Sidebar-Toggler");
+    const testClass = "open";
+    var sidBar = document.getElementById("sidebar");
+    var classNamesArr = sidBar.className.split(/\s/);
+    sidebarToggler.addEventListener("click", () => {
         $('.sidebar, .content').toggleClass("open");
+        sidBar = document.getElementById("sidebar");
+        classNamesArr = sidBar.className.split(/\s/);
         return false;
     });
+    document.addEventListener("click", () => {
+        if (classNamesArr.includes(testClass) && $(window).width() < 991.98) {
+            $('.sidebar, .content').removeClass("open");
+            return false;
+        }
+        else
+            return false;
+    });
+    sidebarToggler.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+    sidBar.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+
 
 
     // Progress Bar
