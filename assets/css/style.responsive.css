@@ -1,0 +1,98 @@
+@media (max-width: 1200px) {
+    .statistics .pupular-rates h4:after {
+        width: 70%;
+    }
+
+    .statistics .service-statistics h4:after {
+        width: 48%;
+    }
+
+    .statistics .news h4:after {
+        width: 74%;
+    }
+    .proxy-service h4:after {
+        width: 55%;
+    }
+}
+
+@media (max-width: 992px) {
+    .statistics .pupular-rates h4:after {
+        width: 60%;
+    }
+
+    .statistics .service-statistics h4:after {
+        width: 30%;
+    }
+
+    .statistics .news h4:after {
+        width: 65%;
+    }
+    .proxy-service h4:after {
+        width: 39%;
+    }
+}
+
+@media (max-width: 768px) {
+    .statistics .pupular-rates h4:after {
+        width: 57%;
+    }
+
+    .statistics .service-statistics h4:after {
+        width: 25%;
+    }
+
+    .statistics .news h4:after {
+        width: 81%;
+    }
+
+    .statistics .service-statistics hr {
+        left: 15%;
+    }
+    .proxy-service h4:after {
+        width: 0%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 14px;
+    }
+    .login-signup .card {
+        width: 500px;
+        top: -10.7%;
+    }
+    .login-signup .card .nav-pills .nav-link {
+        font-size: 15px;
+    }
+    .login-signup .card .nav-pills .nav-link.active {
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .statistics .pupular-rates h4:after {
+        width: 0%;
+    }
+
+    .statistics .service-statistics h4:after {
+        width: 0%;
+    }
+
+    .statistics .news h4:after {
+        width: 0%;
+    }
+
+    .login-signup .card {
+        width: 400px;
+        top: -9.9%;
+    }
+    .login-signup .card .nav-pills .nav-link {
+        font-size: 12px;
+    }
+    .login-signup .card .nav-pills .nav-link.active {
+        font-size: 15px;
+    }
+    
+}

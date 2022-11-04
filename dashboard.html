@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DASHBOARD</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/images/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ========================= CSS here ========================= -->
+    <link href="assets/css/css2.css" rel="stylesheet">
+    <link href="assets/lib/Fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/Bootstrap/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="assets/lib/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.dashboard.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Sidebar Start -->
+    <section class="sidebar pb-3">
+        <nav class="navbar navbar-light">
+            <div class="text-center w-100 mt-4">
+                <div class="position-relative">
+                    <span class="icon-lr">
+                        <img class="rounded-circle" src="assets/images/dashboard/user.jpg" alt="">
+                    </span>
+                </div>
+                <div class="navbar-nav w-100">
+                    <div class="nav-item dropdown user-dropdown"">
+                        <a href=" #" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mr. Waoow<span
+                            class="ms-1 icon-sm"><i class="fa-solid fa-caret-down"></i></span></a>
+                        <div class="dropdown-menu bg-transparent border-0 text-center">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-nav w-100">
+                <a href="dashboard.html" class="nav-item nav-link mb-2 active"><i
+                        class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-server"></i></span>Residential proxy<span
+                            class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-server"></i></span>Exclusive plus<span
+                            class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-mobile-screen-button"></i></span>Mobdile proxy<span
+                            class="new ms-1">New</span><span class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-user-secret"></i></span>Personal proxy<span
+                            class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-hard-drive"></i></span>Server proxy<span
+                            class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown mb-2">
+                    <a href="#" class="nav-link dropdown-toggle text-uppercase" data-bs-toggle="dropdown"><span
+                            class="icon-sm me-2"><i class="fa-solid fa-eye-slash"></i></span>vpn<span
+                            class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-download"></i></span>Apps<span
+                            class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link"><span class="icon-sm me-2"><i
+                            class="fa-regular fa-handshake"></i></span>Referral system</a>
+                <a href="#" class="nav-item nav-link"><span class="icon-sm me-2"><i
+                            class="fa-solid fa-user"></i></span>Profile</a>
+                <a href="#" class="nav-item nav-link text-uppercase"><span class="icon-sm me-2"><i
+                            class="fa-solid fa-gears"></i></span>api</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-question"></i></span>Help<span
+                            class="icon-sm position-absolute me-3 end-0"><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                        <a href="#" class="dropdown-item"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Sidebar End -->
+
+    <!-- Content Start -->
+    <div class="content">
+        <!-- Navbar Start -->
+        <header class="header">
+            <nav class="navbar navbar-expand navbar-light sticky-top px-4 py-0">
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <div class="icon-sm"><img src="assets/images/dashboard/toglleline.png" /></div>
+                </a>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item">
+                        <span class="me-lg-2"><i class="fa-regular fa-clock"></i></span><span id="datetime"></span>
+                    </div>
+                    <div class="nav-item">
+                        <span style="text-transform: uppercase;">ip:</span><span> 192.168.1.1</span>
+                    </div>
+                    <div class="nav-item">
+                        <span style="text-transform: uppercase; font-weight: 600;">$</span><span> -1.00</span>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <div class="icon-sm"><img class="rounded-circle me-lg-2"
+                                    src="assets/images/dashboard/user.jpg" alt=""></div>
+                            <span class="ms-1 icon-sm"><i class="fa-solid fa-caret-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Navbar End -->
+
+        <!-- Contents Start -->
+        <section class="contents">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 mb-2" id="active-services">
+                        <div class="active-services mt-4 box">
+                            <div class="header-title">
+                                <h5>Active services</h5>
+                            </div>
+                            <div class="row p-3 pt-0">
+                                <div class="col-md-6">
+                                    <div class="service-box box">
+                                        <div class="header-title">
+                                            <span class="icon-sm me-2 justify-content-center"><img
+                                                    src="assets/images/dashboard/active services/server.png" /></span><span>Residential
+                                                proxy</span>
+                                        </div>
+                                        <div class="content-box justify-content-center">
+                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
+                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
+                                            <span class="mt-2">Request test period</span>
+                                        </div>
+                                        <div class="table-box hidden">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Expires</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><a><i
+                                                                    class="fa-solid fa-play"></a></i></th>
+                                                        <td>personal proxy</td>
+                                                        <td>4 days, 21 hours</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="header-title text-end">
+                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
+                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-box box">
+                                        <div class="header-title">
+                                            <span class="icon-sm me-2 justify-content-center"><img
+                                                    src="assets/images/dashboard/active services/diamond.png" /></span><span>Exclusive
+                                                plus</span>
+                                        </div>
+                                        <div class="content-box justify-content-center">
+                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
+                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
+                                            <span class="mt-2">Request test period</span>
+                                        </div>
+                                        <div class="table-box hidden">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Expires</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><a><i
+                                                                    class="fa-solid fa-play"></a></i></th>
+                                                        <td>personal proxy</td>
+                                                        <td>4 days, 21 hours</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="header-title text-end">
+                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
+                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-box box">
+                                        <div class="header-title">
+                                            <span class="icon-sm me-2 justify-content-center"><img
+                                                    src="assets/images/dashboard/active services/spyware.png" /></span><span>Personal
+                                                proxy</span>
+                                        </div>
+                                        <div class="content-box justify-content-center  hidden">
+                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
+                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
+                                            <span class="mt-2">Request test period</span>
+                                        </div>
+                                        <div class="table-box">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Expires</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><a><i
+                                                                    class="fa-solid fa-play"></a></i></th>
+                                                        <td>personal proxy</td>
+                                                        <td>4 days, 21 hours</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="header-title text-end">
+                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
+                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-box box">
+                                        <div class="header-title">
+                                            <span class="icon-sm me-2 justify-content-center"><img
+                                                    src="assets/images/dashboard/active services/leaf.png" /></span><span>Server
+                                                proxy</span>
+                                        </div>
+                                        <div class="content-box justify-content-center">
+                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
+                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
+                                            <span class="mt-2">Request test period</span>
+                                        </div>
+                                        <div class="table-box hidden">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Expires</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><a><i
+                                                                    class="fa-solid fa-play"></a></i></th>
+                                                        <td>personal proxy</td>
+                                                        <td>4 days, 21 hours</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="header-title text-end">
+                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
+                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-box box">
+                                        <div class="header-title">
+                                            <span class="icon-sm me-2 justify-content-center"><img
+                                                    src="assets/images/dashboard/active services/smartphone.png" /></span><span>Mobdile
+                                                proxy</span>
+                                        </div>
+                                        <div class="content-box justify-content-center">
+                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
+                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
+                                            <span class="mt-2">Request test period</span>
+                                        </div>
+                                        <div class="table-box hidden">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Expires</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><a><i
+                                                                    class="fa-solid fa-play"></a></i></th>
+                                                        <td>personal proxy</td>
+                                                        <td>4 days, 21 hours</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="header-title text-end">
+                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
+                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-box box">
+                                        <div class="header-title">
+                                            <span class="icon-sm me-2 justify-content-center"><img
+                                                    src="assets/images/dashboard/active services/hide.png" /></span><span
+                                                class="text-uppercase">vpn</span>
+                                        </div>
+                                        <div class="content-box justify-content-center">
+                                            <a href="#" class="btn btn-primary py-2 px-3"> <i
+                                                    class="fa-solid fa-square-plus me-1"></i>Connect a service</a>
+                                            <span class="mt-2" style="visibility: hidden;">Request test period</span>
+                                        </div>
+                                        <div class="table-box hidden">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Expires</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><a><i
+                                                                    class="fa-solid fa-play"></a></i></th>
+                                                        <td>personal proxy</td>
+                                                        <td>4 days, 21 hours</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="header-title text-end">
+                                                <a href="#" class="btn btn-primary py-1 px-2">more information <i
+                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-2" id="article">
+                        <div class="article mt-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="balance news-box box">
+                                        <div class="header-title align-items-center">
+                                            <div class="col-6">
+                                                <h5>Balance</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" class="btn btn-primary py-1 px-2 float-end"><i
+                                                        class="fa-solid fa-circle-plus me-1"></i>replenish</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="content-box px-2 py-3 d-flex text-center justify-content-between align-items-center">
+                                            <div class="mx-2 w-50">
+                                                <h3>$ -1.00</h3>
+                                            </div>
+                                            <div class="mx-2 w-50">
+                                                <span class="icon-sm"><i
+                                                        class="fa-solid fa-arrow-turn-down fa-xs"></i></span>
+                                                <span>- $ 0.00 Balance</span>
+                                                <hr class="mt-1 mb-2" />
+                                                <span class="icon-sm"><i
+                                                        class="fa-solid fa-arrow-turn-down fa-xs"></i></span>
+                                                <span>- $ 0.00 Balance</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="promo-code news-box box">
+                                        <div class="header-title header-border align-items-center">
+                                            <h5><i class="fa-solid fa-barcode me-2"></i>Got a promo code?</h5>
+                                        </div>
+                                        <div
+                                            class="content-box px-1 py-2 d-flex text-center justify-content-between align-items-center">
+                                            <div class="mx-1 w-80">
+                                                <input class="form-control" type="search" placeholder="Promo code">
+                                            </div>
+                                            <div class="mx-2 w-20">
+                                                <a href="#" class="btn btn-primary px-3 py-2"><i
+                                                        class="fa-solid fa-key"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="tickets news-box box">
+                                        <div class="header-title align-items-center">
+                                            <div class="col-6">
+                                                <h5>Tickets</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" class="news-lnk float-end"><i
+                                                        class="fa-solid fa-comment-dots me-1"></i>create</a>
+                                            </div>
+                                        </div>
+                                        <div class="content-box p-0 d-flex justify-content-between align-items-center">
+                                            <div class="px-3 py-3">
+                                                <span class="first">End of subscription</span>
+                                            </div>
+                                            <div class="px-3 py-3 border-end border-start">
+                                                <span><i class="fa-solid fa-check me-1"></i>Has a solution</span>
+                                            </div>
+                                            <div class="px-3 py-3">
+                                                <span>4 days ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="referral-system news-box box">
+                                        <div class="header-title align-items-center">
+                                            <h5>Referral system</h5>
+                                        </div>
+                                        <div
+                                            class="content-box p-0 d-flex text-center justify-content-between align-items-center">
+                                            <div class="px-3 py-3 w-100">
+                                                <a href="#" class="btn btn-primary py-2 px-3 w-90"><i
+                                                        class="fa-regular fa-handshake me-2"></i>Connect a service</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="news news-box box">
+                                        <div class="header-title align-items-center">
+                                            <div class="col-6">
+                                                <h5>News</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" class="news-lnk float-end"><i
+                                                        class="fa-solid fa-file-lines  me-1"></i>View all</a>
+                                            </div>
+                                        </div>
+                                        <div class="content-box p-0 d-flex justify-content-between align-items-center">
+                                            <div class="col-md-12 py-4 px-3">
+                                                <div class="d-flex justify-content-left align-items-center">
+                                                    <div class="d-flex float-start text-center justify-content-between align-items-center  style="
+                                                        width: 4rem;"">
+                                                        <h3>23</h3>
+                                                        <span class="d-block ms-1">jan 2019</span>
+                                                    </div>
+                                                    <h5 class="d-inline-block float-start m-0 ms-2">New Mobile Proxy
+                                                        tariff: dtac (Thailand)</h5>
+                                                </div>
+                                                <hr style="clear: both;" />
+                                                <p>We have added a new operator and reduced prices for all Mobile Proxy
+                                                    packs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="contacts">
+                        <div class="contacts">
+                            <h6>contacts</h6>
+                            <nav class="navbar navbar-light">
+                                <div class="navbar-nav w-100">
+                                    <a class="nav-item nav-link">Email: support@rsocks.net</a>
+                                    <a class="nav-item nav-link">Jabber: support@rsocks.net</a>
+                                    <a class="nav-item nav-link">Telegram: @rsocks</a>
+                                    <a class="nav-item nav-link">Skype: rsocks.net</a>
+                                    <a class="nav-item nav-link text-uppercase">icq: 560335</a>
+                                    <a class="nav-item nav-link text-capitalize">weChat: rsocks</a>
+                                    <a class="nav-item nav-link text-uppercase">qq: 3307018252</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contents End -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid pt-4 px-4">
+                <div class="rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            &copy; <a href="#">RSOCKS</a>, All Right Reserved.
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a href="https://github.com/MrWaoow?tab=repositories">Mr. Waoow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+    <!-- Content End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><span class="icon-sm"><i
+                class="fa-solid fa-arrow-up-from-bracket"></i></span></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="assets/lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/lib/jquery/jquery-3.6.1.min.js"></script>
+    <script src="assets/lib/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/Fontawesome/js/all.min.js"></script>
+    <script src="assets/lib/chart/chart.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/js/main.dashboard.js"></script>
+</body>
+
+</html>
