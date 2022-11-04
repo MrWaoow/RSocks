@@ -427,16 +427,24 @@ header.header .navbar .navbar-nav .nav-item {
     padding: 3.2rem 0.5rem;
 }
 
+.active-services .service-box .table-box .header-title {
+    border-bottom: none;
+    border-top: 1px solid #00000030;
+}
+
 .active-services .service-box .table-box .table {
     font-size: 0.75rem;
-    margin-bottom: 0;
-    border-bottom: 1px solid #00000030;
+    margin-bottom: 3rem;
+}
+
+.active-services .service-box .table-box .table tbody tr:hover {
+    background-color: #00000007 !important;
 }
 
 .active-services .service-box .table-box .table tbody td,
 .active-services .service-box .table-box .table tbody th {
-    padding-bottom: 3rem;
     text-transform: capitalize;
+    border-bottom: none;
 }
 
 .active-services .service-box .table-box .table tbody th a {
