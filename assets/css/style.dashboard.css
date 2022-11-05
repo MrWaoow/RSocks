@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #61DB81;
+    --primary: #18b372;
     --light: #eee;
     --dark: #000;
 }
@@ -44,6 +44,36 @@ h6 {
     font-size: 0.95rem;
 }
 
+/*** Toggle button ***/
+
+div.toggle.btn {
+    outline: 0.15rem solid #ffffff !important;
+    border: none !important;
+    border-radius: 0.1rem !important;
+}
+
+div.toggle.btn * {
+    font-size: 0.7rem !important;
+}
+
+div.toggle.btn.btn-primary .toggle-group label.btn.btn-primary.toggle-on,
+div.toggle.btn.btn-default .toggle-group label.btn.btn-primary.toggle-on,
+div.toggle.btn.btn-primary .toggle-group label.btn.btn-default.toggle-off,
+div.toggle.btn.btn-default .toggle-group label.btn.btn-default.toggle-off {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+}
+
+div.toggle.btn .toggle-group span.toggle-handle.btn {
+    background-color: #fff !important;
+    border-radius: 0.1rem !important;
+    border-width: 0.4rem !important;
+}
+
+/*** Toggle button ***/
 img {
     width: 100%;
 }
@@ -56,37 +86,37 @@ img {
     margin-bottom: 1rem;
     font-size: 12px;
     border: 0.1rem solid #1a031a83;
-  }
-  
-  .true {
-    color: #48c774 !important;
-  }
-  
-  .wrong {
-    color: #ca0000 !important;
-  }
-  
-  .notification.info {
-    background-color: #d1ecf8 !important;
-    color: #005c86 !important;
-    border-color: #00659431 !important;
-  }
+}
 
-  .notification.attention {
+.true {
+    color: #18b372 !important;
+}
+
+.wrong {
+    color: #ca1717 !important;
+}
+
+.notification.info {
+    background-color: #d1ecf8 !important;
+    color: #1a6183 !important;
+    border-color: #0c699431 !important;
+}
+
+.notification.attention {
     background-color: #f8f0d1 !important;
-    color: #685100 !important;
-    border-color: #e9bc1cbb !important;
-  }
-  
-  .notification.success{
+    color: #685512 !important;
+    border-color: #e7bf2cbb !important;
+}
+
+.notification.success {
     background-color: #00ff0038 !important;
     border: none;
-  }
-  
-  .notification.danger {
+}
+
+.notification.danger {
     background-color: #ca000038 !important;
     border: none;
-  }
+}
 
 .box {
     border: 1px solid #0000001f;
@@ -291,13 +321,13 @@ header.header .navbar .navbar-nav .nav-item {
 
 .sidebar .navbar .navbar-nav .nav-link:hover {
     color: #FFFFFF;
-    border-left: 5px solid #61DB81;
+    border-left: 5px solid #18b372;
 }
 
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: #FFFFFF;
     background-color: #0000001c;
-    border-left: 5px solid #61DB81;
+    border-left: 5px solid #18b372;
 }
 
 .sidebar .nav-item.dropdown.user-dropdown .nav-link {
@@ -352,7 +382,7 @@ header.header .navbar .navbar-nav .nav-item {
     padding-left: 25px;
     color: #cccccce0;
     background-color: inherit;
-    border-left: 5px solid #61DB81;
+    border-left: 5px solid #18b372;
 }
 
 .sidebar .navbar .dropdown-item:hover {
@@ -382,7 +412,7 @@ header.header .navbar .navbar-nav .nav-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #61DB81;
+    background-color: #18b372;
     border-radius: 5px;
     color: #FFFFFF;
 }
@@ -605,7 +635,7 @@ header.header .navbar .navbar-nav .nav-item {
     font-size: 0.75rem;
 }
 
-.article .news.news-box .content-box h5{
+.article .news.news-box .content-box h5 {
     color: #0a58ca;
 }
 
@@ -643,60 +673,202 @@ header.header .navbar .navbar-nav .nav-item {
     margin-top: 1rem;
 }
 
-.active-packages .packages-box .content-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3.2rem 0.5rem;
-}
-
 .active-packages .packages-box .table-box .header-title {
-    border-bottom: none;
-    border-top: 1px solid #00000030;
+    padding: 0;
 }
 
-.active-packages .packages-box .table-box .table {
-    font-size: 0.75rem;
+.active-packages .packages-box .table-box table.table {
+    font-size: 0.8rem;
     margin-bottom: 3rem;
+    color: #646464 !important;
 }
 
-.active-packages .packages-box .table-box .table tbody tr:hover {
-    background-color: #00000007 !important;
-}
-
-.active-packages .packages-box .table-box .table tbody td,
-.active-packages .packages-box .table-box .table tbody th {
+.active-packages .packages-box .table-box table.table thead th {
     text-transform: capitalize;
-    border-bottom: none;
 }
 
-.active-packages .packages-box .table-box .table tbody th a {
-    color: #0d6efd;
+.active-packages .packages-box .table-box table.table tbody td {
+    text-transform: capitalize;
+    text-align: center;
+    align-items: center;
+    padding: 3rem 0.5rem 2rem 0.5rem;
 }
 
-.active-packages .packages-box .table-box .table tbody th a:hover {
-    color: #0a58ca;
-    cursor: pointer;
-}
-
-.active-packages .packages-box .btn.btn-primary {
-    border-radius: 3px;
-    width: 85%;
+.active-packages .packages-box .table-box table.table tbody td .btn.btn-primary {
+    border-radius: 0.2rem;
     font-size: 1rem !important;
 }
 
-.active-packages .packages-box .table-box .btn.btn-primary {
+.active-packages .packages-box .table-box table.table tbody td:first-of-type,
+.active-packages .packages-box .table-box table.table thead th:first-of-type {
+    text-align: center;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(2),
+.active-packages .packages-box .table-box table.table thead th:nth-of-type(2) {
+    text-align: right;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(3),
+.active-packages .packages-box .table-box table.table thead th:nth-of-type(3) {
+    text-align: left;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(3) a.link {
+    text-decoration: none;
+    color: #0a58ca;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(3) a.link:hover {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(3) .btn.btn-primary,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.form .btn.btn-primary {
     font-size: 0.75rem !important;
+    padding: 0.15rem 0.2rem;
+    border: 0.1rem solid #646464;
+    font-weight: 600;
+    background-color: inherit;
+    color: #646464;
+    margin-top: 0.3rem;
+    outline: none;
+    border: 0.1rem solid #00000045;
 }
 
-.active-packages .packages-box .content-box span {
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(3) .btn.btn-primary:hover,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div .btn.btn-primary:hover {
+    background-color: #0000000d;
+    color: #464646;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(4),
+.active-packages .packages-box .table-box table.table thead th:nth-of-type(4) {
+    text-align: right;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(4) span {
+    color: #0a58ca !important;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5),
+.active-packages .packages-box .table-box table.table thead th:nth-of-type(5) {
+    text-align: center;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) {
+    padding: 0.5rem !important;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn {
+    outline-color: #18b372 !important;
+    width: 6.5rem !important;
+    min-height: 1.2rem !important;
+    height: 1.2rem !important;
+    padding: 0;
+    margin: 0.5rem auto;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-primary .toggle-group label.btn.btn-primary.toggle-on,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-default .toggle-group label.btn.btn-primary.toggle-on,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-primary .toggle-group label.btn.btn-default.toggle-off,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-default .toggle-group label.btn.btn-default.toggle-off {
+    background-color: #18b372 !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-primary .toggle-group label.btn.btn-default.toggle-off,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-default .toggle-group label.btn.btn-default.toggle-off {
+    justify-content: end;
+    padding-right: 0.5rem;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-primary .toggle-group label.btn.btn-primary.toggle-on,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-default .toggle-group label.btn.btn-primary.toggle-on {
+    justify-content: start;
+    padding-left: 0.5rem;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) .textfield,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) .password {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: 0.1rem solid #0000001f;
+    border-radius: 0.2rem;
+    width: 49%;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) .textfield:disabled {
+    background-color: inherit;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) .textfield:focus-visible,
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) .password:focus-visible {
+    outline: 0.15em solid #18b372;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) #ip .textfield {
+    width: 100%;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(6),
+.active-packages .packages-box .table-box table.table thead th:nth-of-type(6) {
+    text-align: center;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(6) .btn.btn-primary {
+    padding: 0.3rem !important;
+    color: #fff;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(6)r .btn.btn-primary:first-child {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+    color: #fff;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(6) .btn.btn-primary:first-child:hover {
+    background-color: #1051b3;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(6) .btn.btn-primary:last-child {
+    background-color: #f8df00;
+    border-color: #f8df00;
+    color: #fff;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(6) .btn.btn-primary:last-child:hover {
+    background-color: #eed600;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(7),
+.active-packages .packages-box .table-box table.table thead th:nth-of-type(7) {
+    text-align: center;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(7) {
+    font-weight: bold !important;
+    color: #0a58ca !important;
+
+}
+
+.active-packages .packages-box .table-box table.table tbody td:last-of-type,
+.active-packages .packages-box .table-box table.table thead th:last-of-type {
+    text-align: center;
+}
+
+.active-packages .packages-box .table-box table.table tbody td:last-of-type .icon-sm {
+    width: 1.3rem;
+}
+
+
+.active-packages .packages-box .content-box {
     font-size: 0.8rem;
-}
-
-.active-packages .packages-box .header-title {
-    background-color: #eeeeee;
+    font-weight: 500;
 }
 
 /*** Buy Personal Proxy ***/
@@ -721,104 +893,40 @@ header.header .navbar .navbar-nav .nav-item {
 .buy-personal-proxy .promo-code.news-box .content-box .btn.btn-primary:hover {
     background-color: #149b62;
 }
-
-.buy-personal-proxy .balance.news-box .content-box span {
-    font-size: 0.7rem;
-}
-
-.buy-personal-proxy .balance.news-box .content-box span.icon-sm {
-    color: #000;
-}
-
-.buy-personal-proxy .promo-code.news-box .header-title.header-border {
-    padding: 0.8rem;
-    padding-left: 1.3rem;
-    color: #fff;
-    background-color: #18b372;
-    border: 1px solid #18b372;
-}
-
-.buy-personal-proxy .promo-code.news-box .content-box {
-    border: 0.12rem solid #18b372;
-}
-
-.buy-personal-proxy .promo-code.news-box .content-box .form-control {
+.buy-personal-proxy #select-country {
     border-radius: 0.2rem;
-    width: 100%;
-    box-shadow: none;
-    text-decoration: none;
-
 }
-
-.buy-personal-proxy .promo-code.news-box .content-box .form-control:active,
-.buy-personal-proxy .promo-code.news-box .content-box .form-control:hover {
+.buy-personal-proxy #select-country:focus-visible {
+    outline: none;
     border-color: #18b372;
+    box-shadow: 0 0 1px 0.1em #18b37212;
 }
 
-.buy-personal-proxy .tickets.news-box .header-title .news-lnk,
-.buy-personal-proxy .news.news-box .header-title .news-lnk {
-    color: #cccccc;
-    text-decoration: none;
+
+.buy-personal-proxy .balance.news-box input.parsley-success,
+.buy-personal-proxy .balance.news-box select.parsley-success,
+.buy-personal-proxy .balance.news-box textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
 }
 
-.buy-personal-proxy .tickets.news-box .header-title .news-lnk:hover,
-.buy-personal-proxy .news.news-box .header-title .news-lnk:hover {
-    color: #aaaaaa;
+.buy-personal-proxy .balance.news-box label {
+  transition: all 0.1s linear;
+  font-weight:bold;
 }
-
-.buy-personal-proxy .tickets.news-box .content-box span,
-.buy-personal-proxy .news.news-box .content-box span {
-    font-size: 0.8rem;
+.buy-personal-proxy .balance.news-box label.on {
+  color:#4481C4;
 }
-
-.buy-personal-proxy .tickets.news-box .content-box span.first,
-.buy-personal-proxy .news.news-box .content-box span.first {
-    font-weight: bold;
-    color: #0a58ca;
+.buy-personal-proxy .balance.news-box label.show {
+  top:-15px;
+  opacity:1;
 }
-
-.buy-personal-proxy .referral-system.news-box .content-box .btn.btn-primary {
-    border-radius: 0.2rem;
-    font-size: 0.85rem !important;
-}
-
-.buy-personal-proxy .news.news-box .content-box h3 {
-    color: #555;
-}
-
-.buy-personal-proxy .news.news-box .content-box span {
-    color: #666;
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 0.75rem;
-}
-
-.buy-personal-proxy .news.news-box .content-box h5{
-    color: #0a58ca;
-}
-
 /*** Notifications ***/
 
 .notifications {
-    background-color: #e3e3e3;
-    padding: 25px 20px;
-    height: 100%;
+    display: grid;
 }
-
-.notifications .navbar .navbar-nav .nav-item.nav-link {
-    margin-left: 0;
-    color: #444444;
-    cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.notifications .navbar .navbar-nav .nav-item.nav-link:hover {
-    background-color: #eee;
-}
-
-
-
 
 /*** Testimonial ***/
 .progress .progress-bar {
