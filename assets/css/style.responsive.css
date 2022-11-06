@@ -15,7 +15,7 @@
     }
 
     .Blog h4:after {
-        width: 55%;
+        width: 93%;
     }
 }
 
@@ -35,7 +35,7 @@
         width: 39%;
     }
     .Blog h4:after {
-        width: 39%;
+        width: 91%;
     }
 }
 
@@ -59,7 +59,7 @@
         width: 0%;
     }
     .Blog h4:after {
-        width: 0%;
+        width: 85%;
     }
     h1{
         font-size: 40px;

@@ -2987,26 +2987,39 @@ only screen and (min-width: 1400px) {
 
 .Blog {
   background-color: #1A222D;
-  color: #e4e4e4;
 }
 
 .Blog * {
-  color: #e4e4e4 !important;
+  color: #e0e9f7ab
 }
 
 .Blog .container {
   position: relative;
 }
-
+.Blog h4{
+  color: #F4F7FA !important;
+}
 .Blog h4:after {
-  width: 62%;
+  width: 94%;
+}
+.Blog h3{
+  font-size: 2.2rem;
+  font-weight: 300;
 }
 
-.Blog .icon {
-  width: 64px;
-  margin: 0;
+.Blog h3 + span {
+  text-align: start;
+  color: #e0e9f770 !important;
 }
 
+.Blog h6 {
+  color: #54bb70 !important;
+}
+
+.Blog span.icon-sm,
+.Blog span.icon-sm + span{
+  font-size: 0.75rem;
+}
 
 /*=============================
 	Account Login CSS
