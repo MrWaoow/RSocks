@@ -2791,7 +2791,8 @@ only screen and (min-width: 1400px) {
 }
 
 .statistics h4:after,
-.proxy-service h4:after {
+.proxy-service h4:after,
+.Blog h4:after {
   content: "";
   display: block;
   height: 1px;
@@ -2981,6 +2982,33 @@ only screen and (min-width: 1400px) {
 }
 
 /*=============================
+	Blog CSS
+===============================*/
+
+.Blog {
+  background-color: #1A222D;
+  color: #e4e4e4;
+}
+
+.Blog * {
+  color: #e4e4e4 !important;
+}
+
+.Blog .container {
+  position: relative;
+}
+
+.Blog h4:after {
+  width: 62%;
+}
+
+.Blog .icon {
+  width: 64px;
+  margin: 0;
+}
+
+
+/*=============================
 	Account Login CSS
 ===============================*/
 .login-signup {
@@ -3092,15 +3120,23 @@ only screen and (min-width: 1400px) {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #1A222D;
+  background-color: #fafafa;
   position: relative;
 }
 .footer * {
-  color: #aaa;
+  color: #1A222D;
 }
 
 .footer i {
   color: #fff;
+}
+
+.footer .single-footer a {
+  color: #4077ee;
+}
+
+.footer .single-footer a:hover {
+  color: #3664c7;
 }
 
 
@@ -3167,11 +3203,11 @@ only screen and (min-width: 1400px) {
 }
 
 .footer .single-footer.f-about .copyright-text a {
-  color: #61DB81;
+  color: #4077ee;
 }
 
 .footer .single-footer.f-about .copyright-text a:hover {
-  color: #54bb70;
+  color: #2357c9;
 }
 
 .footer .single-footer.f-link li {
