@@ -524,7 +524,7 @@ header.header .navbar .navbar-nav .nav-item {
 }
 
 .active-services .service-box .btn.btn-primary {
-    border-radius: 3px;
+    border-radius: 0.2rem;
     width: 85%;
     font-size: 1rem !important;
 }
@@ -882,6 +882,16 @@ header.header .navbar .navbar-nav .nav-item {
     padding: 0.5rem 1rem;
 }
 
+.buy-personal-proxy .header-title .title {
+    text-align: start;
+    flex-basis: 40%;
+}
+
+.buy-personal-proxy .header-title .buttons-container {
+    text-align: end;
+    flex-basis: 60%;
+}
+
 .buy-personal-proxy .balance.news-box .header-title .btn.btn-primary,
 .buy-personal-proxy .promo-code.news-box .content-box .btn.btn-primary {
     background-color: #18b372;
@@ -893,35 +903,98 @@ header.header .navbar .navbar-nav .nav-item {
 .buy-personal-proxy .promo-code.news-box .content-box .btn.btn-primary:hover {
     background-color: #149b62;
 }
+
+
+.buy-personal-proxy .balance.news-box table tbody tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td {
+    padding: 0;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td:first-child {
+    text-align: end;
+    flex-basis: 15%;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td:last-child {
+    text-align: start;
+    flex-basis: 80%;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td .icon-sm {
+    position: absolute;
+    top: 20%;
+    right: 1%;
+}
+
 .buy-personal-proxy #select-country {
     border-radius: 0.2rem;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
 }
+
 .buy-personal-proxy #select-country:focus-visible {
     outline: none;
     border-color: #18b372;
     box-shadow: 0 0 1px 0.1em #18b37212;
 }
 
-
 .buy-personal-proxy .balance.news-box input.parsley-success,
 .buy-personal-proxy .balance.news-box select.parsley-success,
 .buy-personal-proxy .balance.news-box textarea.parsley-success {
-  color: #468847;
-  background-color: #DFF0D8;
-  border: 1px solid #D6E9C6;
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
 }
 
 .buy-personal-proxy .balance.news-box label {
-  transition: all 0.1s linear;
-  font-weight:bold;
+    transition: all 0.1s linear;
+    font-weight: bold;
 }
+
 .buy-personal-proxy .balance.news-box label.on {
-  color:#4481C4;
+    color: #4481C4;
 }
+
 .buy-personal-proxy .balance.news-box label.show {
-  top:-15px;
-  opacity:1;
+    top: -15px;
+    opacity: 1;
 }
+
+.buy-personal-proxy .balance.news-box table tbody tr td:last-child .textfield {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: 0.1rem solid #0000001f;
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td:last-child .textfield:disabled {
+    background-color: inherit;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td:last-child .textfield:focus-visible {
+    outline: 0.15em solid #18b372;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td:last-child .btn.btn-primary {
+    border-radius: 0.2rem;
+    font-size: 1rem !important;
+    font-weight: 600;
+}
+
+.buy-personal-proxy .balance.news-box table tbody tr td:last-child .btn.btn-primary {
+    font-size: 0.75rem !important;
+}
+
 /*** Notifications ***/
 
 .notifications {
@@ -964,6 +1037,28 @@ footer.footer {
 }
 
 /*** Responsive ***/
+@media (max-width: 800px) {
+
+    .active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) .textfield,
+    .active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) .password {
+        width: 100%;
+        padding: 0.2rem 0.3rem;
+        font-weight: 400;
+        border-radius: 0.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .buy-personal-proxy .balance.news-box table tbody tr td:first-child {
+        flex-basis: 21% !important;
+    }
+
+    .buy-personal-proxy .balance.news-box table tbody tr td:last-child {
+        flex-basis: 75% !important;
+    }
+}
+
 @media (min-width: 768px) {
     .contents .row #active-services.col-md-6 {
         width: 52%;
@@ -975,5 +1070,12 @@ footer.footer {
 
     .contents .row #contacts.col-md-3 {
         width: 21%;
+    }
+}
+
+@media (max-width: 480px) {
+    .buy-personal-proxy .header-title {
+        text-align: start !important;
+        display: grid;
     }
 }
