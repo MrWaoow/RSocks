@@ -44,5 +44,15 @@ Author: Mr. Waoow
         navbarToggler.classList.toggle("active");
     });
 
-
+    //plus minus button
+    $('.personal-new__buy-bill-item-count-input').prop('disabled', true);
+    $(document).on('click', '.personal-new__buy-bill-item-count-btn.--plus', function () {
+        $('.personal-new__buy-bill-item-count-input').val(parseInt($('.personal-new__buy-bill-item-count-input').val()) + 1);
+    });
+    $(document).on('click', '.personal-new__buy-bill-item-count-btn.--minus', function () {
+        $('.personal-new__buy-bill-item-count-input').val(parseInt($('.personal-new__buy-bill-item-count-input').val()) - 1);
+        if ($('.personal-new__buy-bill-item-count-input').val() == 0) {
+            $('.personal-new__buy-bill-item-count-input').val(1);
+        }
+    });
 })();
