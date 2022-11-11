@@ -14,8 +14,20 @@ Index Of css
 06. Statistics CSS
 07. Proxy-Service CSS
 08. Pricing CSS
-09. Account Login CSS
-10. Footer CSS
+09. Blog CSS
+10. Testimonials CSS
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21. Account Login CSS
+22. Footer CSS
 ========================== */
 /*======================================
     Variables
@@ -950,6 +962,10 @@ hr {
   width: 5.3rem;
 }
 
+.icon-xlg {
+  width: 6rem;
+}
+
 .icon,
 .font-icon,
 .icon-img,
@@ -1091,6 +1107,37 @@ hr {
 .notification.danger {
   background-color: #ca000038 !important;
   border: none;
+}
+
+/* Owl Carousel */
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+.owl-nav.disabled+.owl-dots {
+  margin-top: 4rem !important;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav {
+  margin-top: 4rem !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #61DB81 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 5px 7px !important;
+  background: #D6D6D6 !important;
+  display: block !important;
+  -webkit-backface-visibility: visible !important;
+  transition: opacity 200ms ease !important;
+  border-radius: 30px !important;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1730,7 +1777,7 @@ hr {
   }
 
   .header .navbar-nav .nav-item a {
-    color: #fafafa;
+    color: #f5f5f5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1842,7 +1889,7 @@ hr {
   }
 
   .header .navbar-nav .nav-item a {
-    color: #fafafa;
+    color: #f5f5f5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2162,7 +2209,7 @@ hr {
 
 .navbar-nav .nav-item .sub-menu .nav-item a {
   padding: 0;
-  color: #fafafa;
+  color: #f5f5f5;
   display: block;
   width: 100%;
   font-size: 14px;
@@ -2854,16 +2901,20 @@ only screen and (min-width: 1400px) {
 
 .offered-services a {
   color: inherit;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 .offered-services a:hover {
-  background-color: #ffffff3d;
+  background-color: #91eba9;
+  border: none;
   color: #fff;
-  border-radius: 0.1rem;
+  -webkit-transform: scale(1.05) translateZ(0);
+  transform: scale(1.05) translateZ(0);
   transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
-  padding: 1rem;
 }
 
 .offered-services a span.new {
@@ -2871,10 +2922,8 @@ only screen and (min-width: 1400px) {
 }
 
 .offered-services a.active {
-  background-color: #ffffff8c;
-  border: 0.15rem solid #48c774;
+  background-color: #aef3c0;
   color: #48c774;
-  padding: 1rem;
 }
 
 .offered-services a * {
@@ -3001,7 +3050,7 @@ only screen and (min-width: 1400px) {
 	Proxy-Service CSS
 ===============================*/
 .proxy-service {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   color: #111;
 }
 
@@ -3125,6 +3174,131 @@ only screen and (min-width: 1400px) {
 .Blog span.icon-sm,
 .Blog span.icon-sm+span {
   font-size: 0.75rem;
+}
+
+/*=============================
+	Testimonials CSS
+===============================*/
+
+.testimonials {
+  position: relative;
+  padding: 6rem 0;
+  background-color: #fff;
+}
+
+.testimonials h4 {
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials #reviews {
+  overflow: hidden;
+}
+
+.testimonials .reviews-slider {
+  margin: 5rem 0 2rem 0;
+}
+
+.testimonials__card {
+  background-color: #f5f5f5;
+  padding: 3rem 1.25rem;
+  border-radius: 0.2rem;
+  height: auto;
+  text-align: center;
+  color: #444;
+}
+
+.testimonials__card .ratings i,
+.testimonials__card .ratings svg {
+  color: #2357c9;
+  font-size: 1rem;
+}
+
+.testimonials__picture {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: -1.5rem;
+  transform: translate(-50%, -50%);
+  color: #444;
+  vertical-align: middle;
+}
+
+.testimonials__picture .icon-xlg {
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.testimonials__picture img {
+  border: 0.4rem solid #f5f5f5;
+}
+
+.testimonials .icon-sm {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  color: #2357c9;
+  left: 50%;
+  padding: 1rem;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 0.325rem solid #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .font-icon {
+  display: block;
+  text-align: center;
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+}
+
+.testimonials__name {
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+
+.testimonials__name h3 {
+  padding-top: 0.8rem;
+  text-transform: capitalize;
+}
+
+.testimonials__name p {
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.testimonials ul {
+  text-align: center;
+}
+
+.testimonials ul li {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.testimonials ul li.active,
+.testimonials ul li:hover {
+  background-color: #61DB81;
 }
 
 /*=============================
@@ -3378,7 +3552,9 @@ personal-header__flags img {
   top: -5rem;
   pointer-events: none;
 }
-
+.personal-new__buy-countries-list-item.disabled {
+  opacity: .4;
+}
 .flags-list__flipper.--delayed-15 {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
@@ -3443,7 +3619,7 @@ personal-header__flags img {
 /** personal-proxy **/
 
 .pricing-table {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   color: #111;
 }
 
@@ -3496,10 +3672,9 @@ personal-header__flags img {
   color: #F4F7FA;
 }
 
-.buy-personal-proxy .tabcontent h4,
-.buy-personal-proxy .tabcontent span,
-.buy-personal-proxy .tabcontent,
-.buy-personal-proxy .tabcontent {
+.buy-personal-proxy .content-box h4,
+.buy-personal-proxy .content-box span,
+.buy-personal-proxy .content-box {
   color: #444;
 }
 
@@ -3885,20 +4060,17 @@ input[type=radio] {
 }
 
 /* Style the tab content */
-.tabcontent {
-  display: none;
-}
 
 /** individual request **/
 .individual_request {
   background-color: #1A222D;
   text-align: center;
-  color: #fafafa;
+  color: #f5f5f5;
 }
 
 .individual_request h4,
 .individual_request h5 {
-  color: #fafafa;
+  color: #f5f5f5;
   margin: 0;
   margin-bottom: 0.9rem;
 }
@@ -3992,12 +4164,12 @@ input[type=radio] {
 .About {
   background-color: #222c3a;
   text-align: start;
-  color: #fafafa;
+  color: #f5f5f5;
 }
 
 .About h4,
 .About h5 {
-  color: #fafafa;
+  color: #f5f5f5;
   margin: 0;
   margin-bottom: 3rem;
 }
@@ -4028,7 +4200,7 @@ input[type=radio] {
 
 .questions {
   color: #444;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
 }
 
 .questions h4 {
@@ -4077,12 +4249,12 @@ input[type=radio] {
 
 .prefooter {
   text-align: center;
-  color: #fafafa;
+  color: #f5f5f5;
   background: center -33%/78.1% 153% no-repeat url(../images/personal_proxy/Prefooter/Prefooter.svg), #283446;
 }
 
 .prefooter h4 {
-  color: #fafafa;
+  color: #f5f5f5;
   margin: 0;
   margin-bottom: 0.9rem;
 }
@@ -4100,7 +4272,7 @@ input[type=radio] {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   position: relative;
 }
 

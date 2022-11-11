@@ -55,4 +55,15 @@ Author: Mr. Waoow
             $('.personal-new__buy-bill-item-count-input').val(1);
         }
     });
+
+    $('.reviews-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        smartSpeed: 900,
+        items: 1,
+        margin: 24,
+        autoplay: true,
+        autoplayTimeout: 4000,
+    })
 })();
