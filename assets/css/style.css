@@ -2912,9 +2912,9 @@ only screen and (min-width: 1400px) {
   color: #fff;
   -webkit-transform: scale(1.05) translateZ(0);
   transform: scale(1.05) translateZ(0);
-  transition: all 0.1s ease;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
 }
 
 .offered-services a span.new {
@@ -4267,11 +4267,37 @@ input[type=radio] {
   font-weight: 600;
 }
 
+/**Clients**/
 
+.clients{
+  background-color: #f5f5f5;
+}
+
+.clients ul {
+align-items: center;
+text-align: center;
+justify-content: space-between;
+padding: 2rem 0rem;
+}
+
+.clients ul li {
+  display: block;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+}
+
+.clients ul li:hover {
+  opacity: 1;
+}
 /*======================================
 	Footer CSS
 ========================================*/
 .footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #f5f5f5;
   position: relative;
 }
