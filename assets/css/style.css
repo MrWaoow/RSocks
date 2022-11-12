@@ -3251,7 +3251,7 @@ only screen and (min-width: 1400px) {
   align-items: center;
 }
 
-.testimonials .customer{
+.testimonials .customer {
   text-transform: capitalize;
 }
 
@@ -3309,14 +3309,14 @@ only screen and (min-width: 1400px) {
 	Clients CSS
 ===============================*/
 
-.clients{
+.clients {
   background-color: #f5f5f5;
 }
 
 .clients ul {
-align-items: center;
-text-align: center;
-justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .clients ul li {
@@ -3584,9 +3584,11 @@ personal-header__flags img {
   top: -5rem;
   pointer-events: none;
 }
+
 .personal-new__buy-countries-list-item.disabled {
   opacity: .4;
 }
+
 .flags-list__flipper.--delayed-15 {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
@@ -4353,6 +4355,20 @@ input[type=radio] {
   }
 }
 
+.footer .single-footer.payment-methods ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .single-footer.payment-methods ul li {
+  padding: 0.2rem 0.8rem;
+  border: 0.1rem solid #88888830;
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+
+
 .footer .single-footer.f-about {
   padding-right: 30px;
 }
@@ -4396,6 +4412,12 @@ input[type=radio] {
   color: #2357c9;
 }
 
+.footer .single-footer.f-link ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer .single-footer.f-link li {
   display: block;
   margin-bottom: 12px;
@@ -4425,7 +4447,7 @@ only screen and (min-width: 1400px) {
   font-size: 17px;
   font-weight: 600;
   display: block;
-  margin-bottom: 35px;
+  margin: 1rem 0rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
