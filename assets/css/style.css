@@ -16,17 +16,17 @@ Index Of css
 08. Pricing CSS
 09. Blog CSS
 10. Testimonials CSS
-11.
-12.
-13.
-14.
-15.
-16.
-17.
-18.
-19.
-20.
-21. Account Login CSS
+11. Clients CSS
+12. Account Login & Sign Up Page CSS
+13. Personal Proxy Page CSS
+14. About us Page Css
+15. White Label Page CSS
+16. 
+17. 
+18. 
+19. 
+20. 
+21. 
 22. Footer CSS
 ========================== */
 /*======================================
@@ -56,6 +56,7 @@ p {
   padding: 0;
   font-size: 15px;
   line-height: 24px;
+  color: #414141;
 }
 
 * {
@@ -78,6 +79,58 @@ button:focus,
   border-color: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+.c-Primary {
+  color: #61DB81 !important;
+}
+
+.c-Primary-dk {
+  color: #43b86c !important;
+}
+
+.c-Primary-lt {
+  color: #08ee7f !important;
+}
+
+.c-dk {
+  color: #414141 !important;
+}
+
+.c-lt {
+  color: #fff !important;
+}
+
+.c-lt-gr {
+  color: #f5f5f5 !important;
+}
+
+.c-gr {
+  color: #cecece !important;
+}
+
+.bg-pr {
+  background-color: #61DB81 !important;
+}
+
+.bg-dk {
+  background-color: #414141 !important;
+}
+
+.bg-lt {
+  background-color: #fff !important;
+}
+
+.bg-lt-gr {
+  background-color: #f5f5f5 !important;
+}
+
+.bg-gr {
+  background-color: #cecece !important;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .form-check-input:checked {
@@ -202,6 +255,16 @@ ol {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+}
+
+.header-img {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .header-img {
+    display: block !important;
+  }
 }
 
 .mt-5 {
@@ -977,6 +1040,13 @@ hr {
   text-align: center;
 }
 
+.img-box {
+  width: 20rem;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0rem auto;
+}
+
 .font-icon.lf {
   margin-left: 5px;
 }
@@ -1701,6 +1771,10 @@ hr {
   width: 100%;
   left: 0;
   top: 0;
+}
+
+.nav-title {
+  background: url(../images/white_label/header/maps_beta2.svg) 100% 50% no-repeat;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2960,7 +3034,7 @@ only screen and (min-width: 1400px) {
 ===============================*/
 
 .statistics {
-  color: #444;
+  color: #414141;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -3088,7 +3162,7 @@ only screen and (min-width: 1400px) {
 
 .rounded-lg .list-unstyled li {
   margin-bottom: 1rem;
-  color: #444;
+  color: #414141;
   font-size: 14px;
 }
 
@@ -3118,7 +3192,7 @@ only screen and (min-width: 1400px) {
 .rounded-lg .text-primary {
   font-size: 1rem !important;
   font-weight: 900;
-  color: #444 !important;
+  color: #414141 !important;
 }
 
 .rounded-lg .button {
@@ -3187,7 +3261,7 @@ only screen and (min-width: 1400px) {
 }
 
 .testimonials h4 {
-  color: #444;
+  color: #414141;
   margin-bottom: 1.5rem;
 }
 
@@ -3205,7 +3279,7 @@ only screen and (min-width: 1400px) {
   border-radius: 0.2rem;
   height: auto;
   text-align: center;
-  color: #444;
+  color: #414141;
 }
 
 .testimonials__card .ratings i,
@@ -3221,7 +3295,7 @@ only screen and (min-width: 1400px) {
   left: 50%;
   top: -1.5rem;
   transform: translate(-50%, -50%);
-  color: #444;
+  color: #414141;
   vertical-align: middle;
 }
 
@@ -3332,9 +3406,9 @@ only screen and (min-width: 1400px) {
   opacity: 1;
 }
 
-/*=============================
-	Account Login CSS
-===============================*/
+/*==================================
+	Account Login & Sign Up Page CSS
+====================================*/
 .login-signup {
   background-color: #f5f5f5;
   position: relative;
@@ -3709,7 +3783,7 @@ personal-header__flags img {
 .buy-personal-proxy .content-box h4,
 .buy-personal-proxy .content-box span,
 .buy-personal-proxy .content-box {
-  color: #444;
+  color: #414141;
 }
 
 .buy-personal-proxy .title {
@@ -3724,7 +3798,7 @@ personal-header__flags img {
 }
 
 .personal-new__buy-countries-usa-city {
-  color: #444 !important;
+  color: #414141 !important;
   width: 9rem;
   font-size: 14px;
   font-weight: 700;
@@ -3862,7 +3936,7 @@ input[type=radio] {
 }
 
 .personal-new__buy-bill-item-count input:disabled {
-  color: #444;
+  color: #414141;
   background-color: #fff;
 }
 
@@ -4233,13 +4307,13 @@ input[type=radio] {
 /**Prefooter**/
 
 .questions {
-  color: #444;
+  color: #414141;
   background-color: #f5f5f5;
 }
 
 .questions h4 {
   text-align: center;
-  color: #444;
+  color: #414141;
   margin: 0;
   margin-bottom: 0.9rem;
 }
@@ -4260,7 +4334,7 @@ input[type=radio] {
 }
 
 .questions .openable h6 {
-  color: #444;
+  color: #414141;
 }
 
 .questions .openable h6 .icon-sm {
@@ -4300,6 +4374,155 @@ input[type=radio] {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+/*======================================
+	 About us Page CSS
+========================================*/
+
+.about-us p {
+  margin-bottom: 1rem;
+}
+
+/*======================================
+	 White Label Page CSS
+========================================*/
+white-label {
+  color: #414141;
+}
+
+.you-get .content-box {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.you-get .content-box .features {
+  margin-top: 1.5rem;
+}
+
+.you-get .content-box .features img {
+  width: 48px;
+  height: 48px;
+}
+
+.you-get .content-box .features hr {
+  border-color: #414141;
+  opacity: 1;
+  width: 25%;
+  margin: 0.5rem auto;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+}
+
+.you-get .content-box .features p {
+  padding: 0rem 0.5rem;
+}
+
+.you-get .content-box .features:hover hr {
+  border-color: #61DB81;
+  width: 80%;
+}
+
+.must-provide ul {
+  list-style: disc;
+  color: #414141;
+  margin-left: 1rem;
+}
+
+.scheme {
+  background-color: #1A222D;
+}
+
+.scheme .container {
+  background: url(../images/white_label/header/maps_beta2.svg) no-repeat 50% 50%;
+}
+
+
+.whitelabel-contacts p {
+  margin-bottom: 1rem;
+}
+
+.whitelabel-contacts .form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  font-size: 14px;
+  line-height: 1.428571429;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: none;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.whitelabel-contacts .form-control {
+  line-height: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #e4e8ef !important;
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.whitelabel-contacts .has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.whitelabel-contacts textarea.form-control {
+  height: 6rem;
+}
+
+.whitelabel-contacts .has-error .form-control {
+  border-bottom-color: #a94442 !important;
+}
+
+.whitelabel-contacts .has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label {
+  color: #a94442;
+}
+
+.whitelabel-contacts .help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+  font-size: 11px;
+}
+
+.whitelabel-contacts .help-block-error {
+  display: none;
+}
+
+.whitelabel-contacts .has-error input.form-control+.help-block-error,
+.whitelabel-contacts .has-error textarea.form-control+.help-block-error {
+  display: block;
+}
+
 
 /*======================================
 	Footer CSS
