@@ -19,9 +19,9 @@ Index Of css
 11. Clients CSS
 12. Account Login & Sign Up Page CSS
 13. Personal Proxy Page CSS
-14. About us Page Css
+14. About Us Page CSS
 15. White Label Page CSS
-16. 
+16. Contacts US Page CSS
 17. 
 18. 
 19. 
@@ -232,7 +232,6 @@ h4 {
   font-size: 25px;
   font-family: "Lucida Sans";
   position: relative;
-  margin: 40px 0px;
   text-transform: capitalize;
 }
 
@@ -1048,11 +1047,11 @@ hr {
 }
 
 .font-icon.lf {
-  margin-left: 5px;
+  margin-left: 0.4rem;
 }
 
 .font-icon.rt {
-  margin-right: 5px;
+  margin-right: 0.4rem;
 }
 
 .center-H {
@@ -1061,6 +1060,7 @@ hr {
 }
 
 .box {
+  padding: 0.2rem;
   border-radius: 0.1rem;
   border: 1px solid #0000001f;
   box-shadow: 0px 0px 5px 0px #0000000f;
@@ -1143,6 +1143,12 @@ hr {
 .div-close {
   max-height: 3.5rem !important;
   overflow: hidden !important;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .r-180 {
@@ -3138,6 +3144,10 @@ only screen and (min-width: 1400px) {
   margin: 0;
 }
 
+.proxy-service .line-after{
+  margin-top: 2rem;
+}
+
 
 
 /*=============================
@@ -3158,6 +3168,10 @@ only screen and (min-width: 1400px) {
 
 .pricing-header p {
   color: #999;
+}
+
+.pricing-Card {
+  height: 100%;
 }
 
 .rounded-lg .list-unstyled li {
@@ -3226,8 +3240,12 @@ only screen and (min-width: 1400px) {
   position: relative;
 }
 
+.proxy-service .line-after{
+}
+
 .Blog h4 {
   color: #F4F7FA !important;
+  margin: 2rem 0rem;
 }
 
 
@@ -3737,6 +3755,7 @@ personal-header__flags img {
 
 .pricing-table h4 {
   display: flex;
+  margin: 2rem 0rem;
 }
 
 
@@ -4187,6 +4206,7 @@ input[type=radio] {
   width: 55%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+  color: #F4F7FA;
 }
 
 .individual_request ul {
@@ -4370,13 +4390,14 @@ input[type=radio] {
 .prefooter p {
   margin: 0 auto;
   margin-bottom: 2rem;
-  width: 46rem;
+  width: 55%;
   font-size: 1.1rem;
   font-weight: 600;
+  color: #F4F7FA;
 }
 
 /*======================================
-	 About us Page CSS
+	 About Us Page CSS
 ========================================*/
 
 .about-us p {
@@ -4442,7 +4463,7 @@ white-label {
   margin-bottom: 1rem;
 }
 
-.whitelabel-contacts .form-group {
+.form-group {
   margin-bottom: 1rem;
 }
 
@@ -4468,7 +4489,7 @@ white-label {
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
 }
 
-.whitelabel-contacts .form-control {
+.form-control {
   line-height: 40px;
   height: 40px;
   padding: 0;
@@ -4479,7 +4500,7 @@ white-label {
   box-shadow: none !important;
 }
 
-.whitelabel-contacts .has-error .form-control {
+.has-error .form-control {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
@@ -4489,11 +4510,11 @@ white-label {
   height: 6rem;
 }
 
-.whitelabel-contacts .has-error .form-control {
+.has-error .form-control {
   border-bottom-color: #a94442 !important;
 }
 
-.whitelabel-contacts .has-error .checkbox,
+.has-error .checkbox,
 .has-error .checkbox-inline,
 .has-error .control-label,
 .has-error .help-block,
@@ -4503,10 +4524,10 @@ white-label {
 .has-error.checkbox-inline label,
 .has-error.radio label,
 .has-error.radio-inline label {
-  color: #a94442;
+  color: #a94442 !important;
 }
 
-.whitelabel-contacts .help-block {
+.help-block {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -4514,15 +4535,102 @@ white-label {
   font-size: 11px;
 }
 
-.whitelabel-contacts .help-block-error {
+.help-block-error {
   display: none;
 }
 
-.whitelabel-contacts .has-error input.form-control+.help-block-error,
-.whitelabel-contacts .has-error textarea.form-control+.help-block-error {
+.has-error input.form-control+.help-block-error,
+.has-error textarea.form-control+.help-block-error {
   display: block;
 }
 
+/*======================================
+	 Contacts Us Page CSS
+========================================*/
+.contact-us {
+  background-color: #f5f5f5;
+}
+
+.contact-us .container {
+  position: relative;
+  min-height: 35rem;
+}
+
+.contacts {
+  position: absolute;
+  border: none;
+  top: -12.4%;
+  width: 100%;
+  z-index: 1;
+}
+
+.contacts-list {
+  padding: 6rem;
+}
+
+.contacts-list {
+  background: #61DB81 url(../images/contact_us/envelope_bg.png) no-repeat 100% 100%;
+}
+
+.contacts-feedback {
+  background-color: #fff;
+  padding: 5rem;
+}
+
+.contacts .content {
+  margin-bottom: 1rem;
+}
+
+.contacts .content .content-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #414141;
+}
+.contacts .content.highlight{
+  position: relative;
+}
+.contacts .content.highlight::before {
+  background-color: #9ef8b4;
+  border-radius: 0.7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: calc(100% + 36px);
+  height: calc(100% + 18px);
+  margin-top: -9px;
+  margin-left: -18px;
+  content: '';
+  border: 0.06rem solid #6FC285;
+}
+
+.contacts .content .font-icon {
+  position: relative;
+  color: #414141;
+  margin-right: 1rem;
+}
+
+label.control-label {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.contacts table tr td {
+  padding-bottom: 2rem;
+}
+
+table textarea.form-control{
+  min-height: 10rem;
+}
+
+table a.btn{
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
 
 /*======================================
 	Footer CSS
