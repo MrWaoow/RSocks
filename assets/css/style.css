@@ -13,7 +13,7 @@ Index Of css
 05. Offered-Services CSS
 06. Statistics CSS
 07. Proxy-Service CSS
-08. Pricing CSS
+08. Pricing Table CSS
 09. Blog CSS
 10. Testimonials CSS
 11. Clients CSS
@@ -22,8 +22,8 @@ Index Of css
 14. About Us Page CSS
 15. White Label Page CSS
 16. Contacts US Page CSS
-17. 
-18. 
+17. FAQ Page CSS
+18. Shared Proxy Page CSS
 19. 
 20. 
 21. 
@@ -3158,8 +3158,8 @@ only screen and (min-width: 1400px) {
 	Pricing Table CSS
 ===============================*/
 .pricing-header {
-  background-color: #111;
-  padding: 2% 5%;
+  background-color: #232d3b;
+  padding: 1rem 1.5rem;
 }
 
 .pricing-header .foaw {
@@ -3175,22 +3175,44 @@ only screen and (min-width: 1400px) {
 }
 
 .pricing-Card {
-  height: 100%;
+  min-height: fit-content;
+  min-width: fit-content;
 }
 
-.rounded-lg .list-unstyled li {
-  margin-bottom: 1rem;
-  color: #414141;
-  font-size: 14px;
+.pricing-Card.box {
+  padding: 0;
+  box-shadow: 0px 0px 10px 2px #0000000f;
 }
 
-.rounded-lg .rounded-lg .foaw {
-  width: 15% !important;
+.pricing-Card table.table {
+  margin: 0;
+}
+
+.pricing-Card table.table tbody tr td,
+.pricing-Card table.table thead tr th {
+  padding: 0rem;
+}
+
+.pricing-Card table.table tbody tr td:first-of-type,
+.pricing-Card table.table thead tr th:first-of-type {
+  width: 10%;
+  text-align: center;
+}
+
+.pricing-Card table.table tbody tr td:last-of-type,
+.pricing-Card table.table thead tr th:last-of-type {
+  width: 90%;
+  padding-left: 2rem;
 }
 
 .rounded-lg {
   border-radius: 0rem !important;
-  padding: 5% 10%;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+}
+
+.rounded-lg table.table tbody tr td {
+  padding-bottom: 1rem;
 }
 
 .text-small {
@@ -3764,13 +3786,22 @@ personal-header__flags img {
 
 /* Pricing Table CSS */
 
-.pricing-header .price {
+.pricing-table .pricing-header table.table thead tr th {
+  width: 50%;
+}
+
+.pricing-table .pricing-header table.table thead tr th:first-of-type {
+  text-align: start;
+}
+
+.pricing-table .pricing-header table.table thead tr th:last-of-type {
   text-align: end;
 }
 
-.pricing-header .price h5 {
+.pricing-table .pricing-header table.table thead tr th:last-of-type h5 {
   color: #61DB81;
 }
+
 
 .pricing-table .pricing-header {
   padding: 0.9rem 1.5rem;
@@ -3778,6 +3809,23 @@ personal-header__flags img {
 
 .pricing-table .rounded-lg {
   padding: 1rem 1.5rem;
+}
+
+.pricing-table .rounded-lg table.table tbody tr td {
+  text-align: start;
+}
+
+.pricing-table .rounded-lg table.table tbody tr td:first-of-type {
+  width: 5%;
+}
+
+.pricing-table .rounded-lg table.table tbody tr td:last-of-type {
+  width: 95%;
+  padding-left: 1rem;
+}
+
+.pricing-table .rounded-lg table.table tbody tr td hr {
+  margin: 0;
 }
 
 .pricing-table .rounded-lg li.col-1 {
@@ -4640,7 +4688,7 @@ table a.btn {
 }
 
 /*======================================
-	FAQ CSS
+	FAQ CSS Page
 ========================================*/
 .faq .openable .icon-md {
   position: relative;
@@ -4682,6 +4730,46 @@ table a.btn {
   font-size: 0.8rem;
 }
 
+/*======================================
+	Shared Proxy Page CSS
+========================================*/
+
+.hero-area .hero-content .list {
+  font-size: 0.9rem;
+  margin-left: 3rem;
+}
+
+.hero-area .hero-content .list span {
+  display: list-item;
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+
+.Proxy-lists {
+  background-color: #f5f5f5;
+}
+.Proxy-lists p {
+  margin-bottom: 2rem;
+}
+.Proxy-lists .pricing-Card .pricing-header table.table thead tr th h4{
+  color: #FAFAFA;
+}
+
+.Proxy-lists .pricing-Card .pricing-header table.table thead tr th{
+  padding: 0;
+}
+.Proxy-lists .pricing-Card .rounded-lg table.table tbody tr td{
+  text-align: start;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.Proxy-lists .pricing-Card .rounded-lg table.table tbody tr td label{
+  display: block;
+  color: #999;
+  font-weight: 100;
+  font-size: 0.7;
+}
 
 /*======================================
 	Footer CSS
