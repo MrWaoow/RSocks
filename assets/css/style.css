@@ -1153,14 +1153,18 @@ hr {
 
 .r-180 {
   transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  /* IE 9 */
-  transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
+  -webkit-transform: rotate(180deg);
+}
+
+.r-90 {
+  transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 .true {
@@ -3144,7 +3148,7 @@ only screen and (min-width: 1400px) {
   margin: 0;
 }
 
-.proxy-service .line-after{
+.proxy-service .line-after {
   margin-top: 2rem;
 }
 
@@ -3240,8 +3244,7 @@ only screen and (min-width: 1400px) {
   position: relative;
 }
 
-.proxy-service .line-after{
-}
+.proxy-service .line-after {}
 
 .Blog h4 {
   color: #F4F7FA !important;
@@ -4338,14 +4341,14 @@ input[type=radio] {
   margin-bottom: 0.9rem;
 }
 
-.questions .openable {
+.openable {
   background-color: #fff;
   height: 3.5rem;
+  max-height: fit-content;
   overflow: hidden;
   padding: 1rem;
-  cursor: pointer;
   border-radius: 0.4rem;
-  border: 0.1rem solid #dce6fb;
+  border: 0.1rem solid #ededed;
   margin-bottom: 1rem;
   transition: height 0.5s;
   -o-transition: height 0.5s;
@@ -4353,25 +4356,26 @@ input[type=radio] {
   -webkit-transition: height 0.5s;
 }
 
-.questions .openable h6 {
+.openable h6 {
   color: #414141;
+  cursor: pointer;
 }
 
-.questions .openable h6 .icon-sm {
-  transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
+.openable h6 .icon-sm {
+  transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0s;
 }
 
-.questions .openable p {
+.openable p {
   font-size: 0.85rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
 }
-
 
 /**Prefooter**/
 
@@ -4587,9 +4591,11 @@ white-label {
   flex-direction: column;
   color: #414141;
 }
-.contacts .content.highlight{
+
+.contacts .content.highlight {
   position: relative;
 }
+
 .contacts .content.highlight::before {
   background-color: #9ef8b4;
   border-radius: 0.7rem;
@@ -4618,19 +4624,64 @@ label.control-label {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
+
 .contacts table tr td {
   padding-bottom: 2rem;
 }
 
-table textarea.form-control{
+table textarea.form-control {
   min-height: 10rem;
 }
 
-table a.btn{
+table a.btn {
   padding: 0.6rem 1rem;
   font-size: 1.2rem;
   border-radius: 0.5rem;
 }
+
+/*======================================
+	FAQ CSS
+========================================*/
+.faq .openable .icon-md {
+  position: relative;
+}
+
+.faq .openable .icon-md .toggler-icon {
+  position: absolute;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: #61DB81;
+  display: block;
+  bottom: -0.3rem;
+  transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0s;
+}
+
+.faq .openable h6 {
+  width: fit-content;
+}
+
+.faq .notification {
+  background-color: #f5f5f5;
+}
+
+.faq .notification .btn {
+  background-color: #999;
+}
+
+.faq .openable p {
+  margin-left: 3rem;
+}
+
+.faq .openable table {
+  width: 40%;
+  margin-left: 3rem;
+  font-size: 0.8rem;
+}
+
 
 /*======================================
 	Footer CSS
