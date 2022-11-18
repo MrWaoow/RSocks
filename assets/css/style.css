@@ -261,7 +261,7 @@ ol {
   display: none !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .header-img {
     display: block !important;
   }
@@ -462,6 +462,7 @@ hr {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
+
 .p-4-5 {
   padding: 2.5rem;
 }
@@ -2353,7 +2354,7 @@ only screen and (min-width: 1400px) {
 
 .statistics .pupular-rates,
 .statistics .service-statistics {
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
 }
 
 .statistics .service-statistics h1.icon {
@@ -2378,14 +2379,15 @@ only screen and (min-width: 1400px) {
 
 .statistics .service-statistics hr {
   position: absolute;
-  left: 24%;
-  bottom: -25px;
-  width: 100px;
+  bottom: -25%;
+  width: 60%;
+  left: 20%;
+  right: 20%;
   opacity: 1;
   border-color: #61DB81;
-  border-width: 5px;
-  border-radius: 5px;
-  margin: 0;
+  border-width: 0.3rem;
+  border-radius: 0.3rem;
+  margin: 0rem;
 }
 
 .statistics .content-box h5+span {
@@ -2481,6 +2483,11 @@ only screen and (min-width: 1400px) {
 
 .pricing-Card table.table {
   margin: 0;
+}
+
+.pricing-Card table.table tbody tr td p,
+.pricing-Card table.table thead tr th p {
+  margin: 0 !important;
 }
 
 .pricing-Card table.table tbody tr td,
@@ -3058,7 +3065,7 @@ personal-header__flags img {
 }
 
 .hero-area .hero-content ul li {
-  display: block;
+  display: flex;
   margin-bottom: 1.5rem;
 }
 
@@ -3715,6 +3722,7 @@ input[type=radio] {
 .openable p {
   font-size: 0.85rem;
   margin-top: 1.5rem;
+  margin-bottom: 0rem;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -4217,6 +4225,10 @@ table a.btn {
   background-color: #bbb !important;
 }
 
+.shared-checker ul.d-flex {
+  flex-direction: column;
+}
+
 .shared-checker ul li:first-of-type {
   flex-basis: 15%;
 }
@@ -4320,6 +4332,8 @@ table a.btn {
 }
 
 .footer .single-footer.payment-methods ul li {
+  display: flex;
+  align-items: center;
   padding: 0.2rem 0.8rem;
   border: 0.1rem solid #88888830;
   border-radius: 0.2rem;
