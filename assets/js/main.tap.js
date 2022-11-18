@@ -1,3 +1,8 @@
+/*
+Template Name: RSocks - Startup & SaaS Bootstrap 5 Template.
+Author: Mr. Waoow
+*/
+
 const getChildIndex = (element) => {
     return Array.from(element.parentNode.children).indexOf(element);
 };
@@ -104,9 +109,21 @@ const changeBtn = (evt) => {
 
 const Smooth = {
     r180: "r-180",
-    init: (evt) => {
-        let el = evt.currentTarget.parentNode;
+    r90: "r-90",
+    pxToRem: (num) => {
+        const remNum = num * 0.0625;
+        return remNum;
+    },
+    init: (evt, elementID = "") => {
+        let el;
+        if (!elementID == "") {
+            el = document.getElementById(elementID);
+        } else {
+            el = evt.currentTarget.parentNode;
+        }
         if (!el.hasAttribute('data-height')) {
+            const baseHeight = parseFloat(window.getComputedStyle(el, null).getPropertyValue('height'));
+            const baseHeightRem = parseFloat(Smooth.pxToRem(baseHeight));
             el.style.height = "auto";
             const elementHeight = parseFloat($(el).height());
             const paddingTop = parseFloat(window.getComputedStyle(el, null).getPropertyValue('padding-top'));
@@ -116,10 +133,10 @@ const Smooth = {
             const marginTop = parseFloat(window.getComputedStyle(el, null).getPropertyValue('margin-top'));
             const marginBottom = parseFloat(window.getComputedStyle(el, null).getPropertyValue('margin-bottom'));
             const fullHeight = elementHeight + paddingTop + paddingBottom + borderTop + borderBottom + marginTop + marginBottom;
-            const fullHeightToRem = parseFloat(fullHeight * 0.0625);
+            const fullHeightToRem = parseFloat(Smooth.pxToRem(fullHeight));
             el.dataset.height = fullHeightToRem + "rem";
-            console.log(parseFloat(fullHeight));
-            el.style.height = "3.5rem";
+            el.dataset.baseHeight = baseHeightRem + "rem";
+            el.style.height = baseHeightRem + "rem";
         }
         return el;
     },
@@ -134,10 +151,9 @@ const Smooth = {
         } else {
             icon.classList.remove(Smooth.r180)
             let div2 = Smooth.init(evt);
-            div2.style.height = "3.5rem";
+            div2.style.height = div2.dataset.baseHeight;
         }
     },
-    r90: "r-90",
     expandCollapsePlus: (evt) => {
         const element = evt.currentTarget;
         const icon = element.querySelector('.icon-md');
@@ -151,7 +167,24 @@ const Smooth = {
         } else {
             plus.classList.add(Smooth.r90)
             let div2 = Smooth.init(evt);
-            div2.style.height = "3.5rem";
+            div2.style.height = div2.dataset.baseHeight;
+        }
+    },
+    expandCollapseTarget: (evt, elementID) => {
+        const btn = evt.currentTarget;
+        const btnIcon = btn.querySelector('.icon-sm');
+        const btnContent = btn.querySelector('.content');
+        const iconAnimation = Smooth.r180;
+        if (!btnIcon.classList.contains(iconAnimation)) {
+            btnIcon.classList.add(Smooth.r180)
+            btnContent.innerHTML = "Hide all";
+            let div1 = Smooth.init(evt, elementID);
+            setTimeout(() => { div1.style.height = div1.dataset.height; }, 20);
+        } else {
+            btnIcon.classList.remove(Smooth.r180);
+            btnContent.innerHTML = "Show all";
+            let div2 = Smooth.init(evt, elementID);
+            div2.style.height = div2.dataset.baseHeight;
         }
     }
 }

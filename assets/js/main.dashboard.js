@@ -1,4 +1,9 @@
-(function ($) {
+/*
+Template Name: RSocks - Startup & SaaS Bootstrap 5 Template.
+Author: Mr. Waoow
+*/
+
+(($) => {
     "use strict";
 
     // Spinner

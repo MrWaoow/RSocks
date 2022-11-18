@@ -3,7 +3,7 @@ Template Name: RSocks - Startup & SaaS Bootstrap 5 Template.
 Author: Mr. Waoow
 */
 
-(function () {
+(() => {
     //===== Prealoder
 
     window.onload = function () {

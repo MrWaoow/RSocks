@@ -1,3 +1,8 @@
+/*
+Template Name: RSocks - Startup & SaaS Bootstrap 5 Template.
+Author: Mr. Waoow
+*/
+
 /*$(function() {
     const loginBtn = document.getElementById("login-form-link");
     const signupBtn = document.getElementById("signup-form-link");
