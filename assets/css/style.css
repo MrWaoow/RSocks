@@ -4083,18 +4083,18 @@ table a.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
+  flex-wrap: wrap;
   margin: 30px 0 4px 0;
 }
 
 .shared-proxy__countries-search_input {
   font-size: 16px;
-  margin-right: 1px;
-  padding: 0 30px;
+  margin-right: 0.5%;
+  padding: 1rem 1rem;
   border: none;
   border-radius: 3px 0 0 3px;
   -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
+  flex-basis: 80%;
 }
 
 .shared-proxy__countries-search_button {
@@ -4111,8 +4111,8 @@ table a.btn {
   border-radius: 0 3px 3px 0;
   background-color: #61DB81;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 190px;
-  flex: 0 0 190px;
+  -ms-flex: 0 0 19.5%;
+  flex: 0 0 19.5%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

@@ -111,6 +111,14 @@
     personal-header__earth {
         right: -35rem;
     }
+
+    .shared-proxy__countries-search_input {
+        flex-basis: 60%;
+    }
+
+    .shared-proxy__countries-search_button {
+        flex-basis: 39.5%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -137,6 +145,14 @@
 
     .login-signup .card .nav-pills .nav-link.active {
         font-size: 15px;
+    }
+
+    .shared-proxy__countries-search_input {
+        flex-basis: 56%;
+    }
+
+    .shared-proxy__countries-search_button {
+        flex-basis: 32.5%;
     }
 
 }
