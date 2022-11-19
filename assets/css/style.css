@@ -301,12 +301,20 @@ hr {
   width: 3rem;
 }
 
+.icon-xd {
+  width: 4rem;
+}
+
 .icon-lg {
-  width: 5.3rem;
+  width: 5rem;
 }
 
 .icon-xlg {
   width: 6rem;
+}
+
+.icon-xxl {
+  width: 7.5rem;
 }
 
 .icon,
@@ -314,6 +322,10 @@ hr {
 .icon-img,
 .icon-sm,
 .icon-md,
+.icon-xd,
+.icon-lg,
+.icon-xlg,
+.icon-xxl,
 .img-box {
   display: flex;
   align-items: center;
@@ -464,7 +476,63 @@ hr {
 }
 
 .p-4-5 {
-  padding: 2.5rem;
+  padding: 2.5rem !important;
+}
+
+.py-4-5 {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+.px-4-5 {
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+}
+
+.pt-4-5 {
+  padding-top: 2.5rem !important;
+}
+
+.pb-4-5 {
+  padding-bottom: 2.5rem !important;
+}
+
+.ps-4-5 {
+  padding-left: 2.5rem !important;
+}
+
+.pe-4-5 {
+  padding-right: 2.5rem !important;
+}
+
+.p-4-2 {
+  padding: 2rem !important;
+}
+
+.py-4-2 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.px-4-2 {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
+.pt-4-2 {
+  padding-top: 2rem !important;
+}
+
+.pb-4-2 {
+  padding-bottom: 2rem !important;
+}
+
+.ps-4-2 {
+  padding-left: 2rem !important;
+}
+
+.pe-4-2 {
+  padding-right: 2rem !important;
 }
 
 .true {
@@ -952,7 +1020,7 @@ hr {
 }
 
 .button .btn:hover {
-  color: #1A222D;
+  color: #1F2B3A;
   background-color: #eee;
 }
 
@@ -1101,7 +1169,7 @@ hr {
     top: 61px !important;
     left: 0;
     width: 100%;
-    background-color: #1a222df5;
+    background-color: #1F2B3Af5;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1213,7 +1281,7 @@ hr {
     top: 60px !important;
     left: 0;
     width: 100%;
-    background-color: #1a222df5;
+    background-color: #1F2B3Af5;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1400,7 +1468,7 @@ hr {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 0px 0;
-  background-color: #1A222D;
+  background-color: #1F2B3A;
 }
 
 .navbar {
@@ -1747,7 +1815,7 @@ hr {
 ========================================*/
 .hero-area {
   position: relative;
-  background-color: #1A222D;
+  background-color: #1F2B3A;
   padding: 7rem 0 4rem 0;
   overflow: hidden;
 }
@@ -2557,7 +2625,7 @@ only screen and (min-width: 1400px) {
 ===============================*/
 
 .Blog {
-  background-color: #1A222D;
+  background-color: #1F2B3A;
 }
 
 .Blog * {
@@ -2793,7 +2861,7 @@ only screen and (min-width: 1400px) {
 }
 
 .login-signup .card .btn-dark {
-  color: #1A222D;
+  color: #1F2B3A;
   background-color: #61DB81;
   border-color: #61DB81;
 }
@@ -2815,7 +2883,7 @@ only screen and (min-width: 1400px) {
   border-radius: 0px;
   width: 50%;
   color: #eee;
-  background-color: #1a222dde;
+  background-color: #1F2B3Ade;
   font-size: 20px;
   padding: 15px;
 }
@@ -2823,7 +2891,7 @@ only screen and (min-width: 1400px) {
 .login-signup .card .nav-pills .nav-link.active {
   position: absolute;
   border-radius: 5px;
-  color: #1A222D;
+  color: #1F2B3A;
   font-size: 30px;
   top: -4%;
   background-color: #fff;
@@ -3145,7 +3213,7 @@ personal-header__flags img {
 }
 
 .buy-personal-proxy.head {
-  background-color: #1A222D;
+  background-color: #1F2B3A;
 }
 
 .buy-personal-proxy h4 {
@@ -3503,7 +3571,7 @@ input[type=radio] {
 }
 
 .buy-personal-proxy .search .textfield {
-  color: #1A222D;
+  color: #1F2B3A;
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-weight: 600;
@@ -3543,7 +3611,7 @@ input[type=radio] {
 
 /** individual request **/
 .individual_request {
-  background-color: #1A222D;
+  background-color: #1F2B3A;
   text-align: center;
   color: #f5f5f5;
 }
@@ -3674,7 +3742,7 @@ input[type=radio] {
   border: 0.1rem solid #3c4c648c;
   border-radius: 50%;
   padding: 0.8rem;
-  background-color: #1A222D;
+  background-color: #1F2B3A;
 }
 
 /**Prefooter**/
@@ -3806,7 +3874,7 @@ white-label {
 }
 
 .scheme {
-  background-color: #1A222D;
+  background-color: #1F2B3A;
 }
 
 .scheme .container {
@@ -4272,6 +4340,127 @@ table a.btn {
 }
 
 /*======================================
+	VPN service CSS Page
+========================================*/
+
+.vpn-service {
+  background-color: #f5f5f5;
+}
+
+.vpn-service p {
+  font-weight: normal;
+  font-size: medium;
+}
+
+.vpn-service .pricing-Card.box {
+  border-radius: 0.3rem;
+}
+
+.vpn-service .pricing-Card .pricing-header {
+  border-radius: 0.3rem 0.3rem 0rem 0rem;
+  font-weight: normal;
+}
+
+.vpn-service .pricing-Card .rounded-lg {
+  border-radius: 0rem 0rem 0.3rem 0.3rem !important;
+
+}
+
+.vpn-service .pricing-Card .rounded-lg {
+  background: url(../images/vpn/vpn_service/Test_period.png) no-repeat;
+}
+
+.vpn-service .pricing-Card table.table tbody tr td {
+  width: max-content;
+  text-align: start;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  vertical-align: bottom;
+  color: #f5f5f5;
+}
+
+.vpn-service .pricing-Card table.table thead tr th:first-of-type {
+  width: 50%;
+  text-align: start;
+}
+
+.vpn-service .pricing-Card table.table thead tr th:last-of-type {
+  width: 50%;
+  text-align: end;
+  padding-left: 2rem;
+}
+
+.vpn-service .pricing-Card table.table thead tr th:last-of-type .btn {
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.7rem;
+  font-size: medium;
+  color: #414141;
+}
+
+/* Price of VPN */
+
+.label-header {
+  display: grid;
+  margin-bottom: 1rem;
+  padding: 0rem 1.25rem;
+  grid-template-columns: 13.75rem 1fr 1fr 1fr;
+  -webkit-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+}
+
+.tariffs {
+  display: grid;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  grid-template-columns: 13.75rem 1fr 1fr 1fr;
+  -webkit-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+  border-radius: 0.3rem;
+  background-color: #1F2B3A;
+}
+
+.tariffs h4 {
+  color: #fff;
+}
+
+.tariffs p {
+  color: #74859F;
+}
+
+.tariffs .content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.8rem;
+  background-color: #F4F7FA;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+  align-items: center;
+}
+
+.tariffs .content-box h1 {
+  color: #1F2B3A;
+  position: relative;
+}
+
+.tariffs .content-box h1::before {
+  font-family: OpenSans, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  content: '$';
+  opacity: .5;
+}
+
+.tariffs .content-box .btn {
+  width: 90%;
+  color: #414141;
+}
+
+
+/*======================================
 	Footer CSS
 ========================================*/
 .footer {
@@ -4282,7 +4471,7 @@ table a.btn {
 }
 
 .footer * {
-  color: #1A222D;
+  color: #1F2B3A;
 }
 
 .footer i {
