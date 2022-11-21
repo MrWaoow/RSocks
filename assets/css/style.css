@@ -1828,7 +1828,6 @@ hr {
 
 .hero-area .img-container {
   position: relative;
-  background: #1F2B3A url(../images/hero/app.svg) no-repeat 100% 100%;
 }
 
 .hero-area .img-container .preloader-icon {
@@ -1838,108 +1837,108 @@ hr {
 }
 
 .hero-area .img-container .preloader-icon:first-of-type {
-  right: 65%;
-  top: 15%;
+  right: 90%;
+  top: 20%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(2) {
-  right: 61%;
-  top: 29%;
+  right: 83%;
+  top: 30%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(3) {
-  right: 63%;
-  top: 42%;
+  right: 83%;
+  top: 45%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(4) {
-  right: 56%;
-  top: 65%;
+  right: 75%;
+  top: 68%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(5) {
-  right: 51%;
-  top: 61%;
+  right: 68%;
+  top: 65%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(6) {
-  right: 42%;
-  top: 31%;
+  right: 56%;
+  top: 36%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(7) {
-  right: 39%;
-  top: 33%;
+  right: 51%;
+  top: 36%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(8) {
-  right: 36%;
-  top: 42%;
+  right: 47%;
+  top: 45%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(9) {
-  right: 34%;
-  top: 24%;
+  right: 45%;
+  top: 27%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(10) {
-  right: 30%;
-  top: 40%;
+  right: 39%;
+  top: 43%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(11) {
+  right: 36%;
+  top: 40%;
+}
+
+.hero-area .img-container .preloader-icon:nth-of-type(12) {
+  right: 33%;
+  top: 49%;
+}
+
+.hero-area .img-container .preloader-icon:nth-of-type(13) {
+  right: 32%;
+  top: 19%;
+}
+
+.hero-area .img-container .preloader-icon:nth-of-type(14) {
+  right: 30%;
+  top: 39%;
+}
+
+.hero-area .img-container .preloader-icon:nth-of-type(15) {
   right: 26%;
   top: 35%;
 }
 
-.hero-area .img-container .preloader-icon:nth-of-type(12) {
-  right: 25%;
-  top: 46%;
-}
-
-.hero-area .img-container .preloader-icon:nth-of-type(13) {
-  right: 23%;
-  top: 15%;
-}
-
-.hero-area .img-container .preloader-icon:nth-of-type(14) {
-  right: 21%;
-  top: 38%;
-}
-
-.hero-area .img-container .preloader-icon:nth-of-type(15) {
-  right: 19%;
-  top: 32%;
-}
-
 .hero-area .img-container .preloader-icon:nth-of-type(16) {
-  right: 21%;
-  top: 48%;
+  right: 26%;
+  top: 53%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(17) {
-  right: 18%;
-  top: 48%;
+  right: 23%;
+  top: 52%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(18) {
-  right: 16%;
-  top: 40%;
+  right: 22%;
+  top: 44%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(19) {
-  right: 13%;
-  top: 39%;
+  right: 21%;
+  top: 50%;
 }
 
 .hero-area .img-container .preloader-icon:nth-of-type(20) {
-  right: 14%;
-  top: 48%;
+  right: 18%;
+  top: 41%;
 }
 
 .hero-area .img-container .preloader-icon:last-of-type {
-  right: 13%;
-  top: 72%;
+  right: 17%;
+  top: 74%;
 }
 
 .hero-area .img-container .preloader-icon span {
