@@ -121,6 +121,7 @@ img {
 .box {
     border: 1px solid #0000001f;
     box-shadow: 0px 0px 5px 0px #0000000f;
+    border-radius: 0.7rem;
 }
 
 .header-title {
@@ -128,6 +129,7 @@ img {
     padding: 1rem;
     font-size: 0.8rem;
     font-weight: 600;
+    border-radius: 0.7rem 0.7rem 0rem 0rem;
 }
 
 .icon-sm {
@@ -225,7 +227,7 @@ span.new {
     width: 210px;
     height: 100vh;
     overflow-y: auto;
-    background-color: #223546;
+    background: linear-gradient(180deg, #38bd79, #024f6c);
     transition: 0.5s;
     z-index: 999;
     -ms-overflow-style: none;
@@ -237,7 +239,7 @@ span.new {
 .content {
     margin-left: 210px;
     min-height: 100vh;
-    background-color: #eeeeee;
+    background-color: #e8f9f0;
     transition: 0.5s;
 }
 
@@ -308,20 +310,39 @@ header.header .nav-box ul .ul-item:hover {
 header.header .navbar .navbar-nav .nav-item {
     margin-left: 15px;
     color: #888888;
+    background-color: #cef1e459;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    box-shadow: inset 0px 0px 5px 1px #92ab9f3b;
+    border: 0.05rem solid #00000014;
+}
+
+header.header .navbar .navbar-nav  .nav-item.dropdown {
+    background-color: inherit;
+    padding: 0rem;
+    border-radius: 0rem;
+    box-shadow: none;
+    border: none;
 }
 
 .sidebar .navbar .navbar-nav .nav-link {
     padding: 15px 20px;
-    color: #cccccce0;
+    color: #fff;
     font-weight: 500;
     outline: none;
-    background-color: #8d8d8d1c;
-    border-left: 5px solid #223546;
+    border-left: 5px solid;
+    border-color: transparent;
+    border-radius: 0rem 2rem 2rem 0rem;
+    margin-right: 0.5rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
 }
 
 .sidebar .navbar .navbar-nav .nav-link:hover {
     color: #FFFFFF;
     border-left: 5px solid #18b372;
+    background-color: #00000010;
 }
 
 .sidebar .navbar .navbar-nav .nav-link.active {
@@ -380,9 +401,14 @@ header.header .navbar .navbar-nav .nav-item {
 
 .sidebar .navbar .dropdown-item {
     padding-left: 25px;
-    color: #cccccce0;
+    color: #ddd;
     background-color: inherit;
-    border-left: 5px solid #18b372;
+    border-left: 5px solid;
+    border-color: transparent;
+    margin-right: 0.5rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
 }
 
 .sidebar .navbar .dropdown-item:hover {
@@ -391,7 +417,7 @@ header.header .navbar .navbar-nav .nav-item {
 
 .sidebar .navbar .dropdown-item.active {
     color: #FFFFFF;
-    background-color: #223546;
+    font-weight: bold;
 }
 
 .content .navbar .navbar-nav .nav-link {
@@ -474,6 +500,7 @@ header.header .navbar .navbar-nav .nav-item {
 
 .active-services {
     background-color: #fff;
+    border-radius: 1rem;
 }
 
 .active-services .service-box {
@@ -492,6 +519,7 @@ header.header .navbar .navbar-nav .nav-item {
 .active-services .service-box .table-box .header-title {
     border-bottom: none;
     border-top: 1px solid #00000030;
+    border-radius: 0rem 0rem 0.7rem 0.7rem;
 }
 
 .active-services .service-box .table-box .table {
@@ -582,6 +610,7 @@ header.header .navbar .navbar-nav .nav-item {
 
 .article .promo-code.news-box .content-box {
     border: 0.12rem solid #18b372;
+    border-radius: 0rem 0rem 0.7rem 0.7rem;
 }
 
 .article .promo-code.news-box .content-box .form-control {
@@ -641,22 +670,46 @@ header.header .navbar .navbar-nav .nav-item {
 
 /*** Contacts ***/
 
+#contacts {
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
 .contacts {
-    background-color: #e3e3e3;
-    padding: 25px 20px;
+    background-color: #f7fffb;
+    padding: 2rem 0rem;
+    margin-top: 1.5rem;
+    border-radius: 0.3rem;
     height: 100%;
+}
+
+#contacts .contacts h6 {
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+#contacts .contacts h6:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.05rem;
+    margin: 1rem 0rem;
+    background-color: #0000002b;
 }
 
 .contacts .navbar .navbar-nav .nav-item.nav-link {
     margin-left: 0;
     color: #444444;
     cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
 }
 
 .contacts .navbar .navbar-nav .nav-item.nav-link:hover {
-    background-color: #eee;
+    background-color: #ddf5e9;
 }
 
 /*=============================
