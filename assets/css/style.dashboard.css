@@ -1153,6 +1153,7 @@ header.header .navbar .navbar-nav .user-info {
 .chat-panel {
     background-color: #fff;
     padding: 1rem;
+    width: 100%;
 }
 
 .panel-heading {
