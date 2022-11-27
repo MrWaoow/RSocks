@@ -97,6 +97,7 @@ const addChat = () => {
     `
     if (massage.value != "")
         chats.innerHTML += chat;
+        massage.value = "";
 };
 
 (($) => {
