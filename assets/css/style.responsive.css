@@ -123,6 +123,8 @@
     .shared-proxy__countries-search_button {
         flex-basis: 39.5%;
     }
+
+    
 }
 
 @media (max-width: 480px) {

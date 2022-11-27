@@ -171,17 +171,15 @@
                 <a id="Sidebar-Toggler" href="#" class="sidebar-toggler flex-shrink-0">
                     <div class="icon-sm"><img src="assets/images/dashboard/toglleline.png" /></div>
                 </a>
-                <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item">
-                        <span class="me-lg-2"><i class="fa-regular fa-clock"></i></span><span id="datetime"></span>
+                <div class="navbar-nav align-items-center ms-auto position-relative">
+                    <div
+                        class="nav-item fw-bold no-style d-flex gap-3 flex-wrap align-items-center justify-content-center">
+                        <span>$ 0.00</span>
+                        <a href="#" class="btn fw-bold">Replenish the balance</a>
+                        <a href="#" class="btn fw-bold sec"><span class="icon-sm me-2"><i
+                                    class="fa-solid fa-circle-info"></i></span>Contact the CEO</a>
                     </div>
-                    <div class="nav-item">
-                        <span style="text-transform: uppercase;">ip:</span><span> 192.168.1.1</span>
-                    </div>
-                    <div class="nav-item">
-                        <span style="text-transform: uppercase; font-weight: 600;">$</span><span> -1.00</span>
-                    </div>
-                    <div class="nav-item dropdown">
+                    <div class="nav-item dropdown no-style">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <div class="icon-sm"><img class="rounded-circle me-lg-2"
                                     src="assets/images/dashboard/user.jpg" alt=""></div>
@@ -196,22 +194,37 @@
                 </div>
             </nav>
         </header>
-        <header class="header">
+        <header class="header r-border">
             <div class="nav-box py-3 px-4">
                 <h3>Packages</h3>
-                <ul class="m-0 p-0 pt-2 align-items-center">
-                    <li class="ul-item">main</li>
-                    <i>/</i>
-                    <li class="ul-item">services</li>
-                    <i>/</i>
-                    <li class="ul-item">personal</li>
-                </ul>
+                <div class="d-flex justify-content-between my-2">
+                    <div>
+                        <p>
+                            <span class="icon-sm">
+                                <img src="assets/images/dashboard/attention.png" alt="attention">
+                            </span>
+                            Warning! Any activity that violates the terms of use will lead to immediate blocking of your
+                            account!
+                        </p>
+                        <a href="#" class="btn fw-bold sec p-2"><span class="icon-sm me-2"><i
+                                    class="fa-solid fa-download"></i></span>All proxy as one by URL</a>
+                        <a href="#" class="btn fw-bold sec p-2"><span class="icon-sm me-2"><i
+                                    class="fa-solid fa-download"></i></span>All proxy as one in .txt</a>
+                    </div>
+                    <a href="#" class="btn fw-bold p-4">
+                        <span class="d-block">
+                            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                        </span>
+                        buy more
+                    </a>
+                </div>
+
             </div>
         </header>
         <!-- Navbar End -->
 
         <!-- Contents Start -->
-        <section class="contents">
+        <section class="contents r-border">
             <div class="container-fluid">
                 <!-- Start Active Packages -->
                 <div class="row">
@@ -249,180 +262,49 @@
                                                     <br />
                                                     <a href="#" class="btn btn-primary">Change PTR</a>
                                                 </td>
-                                                <td>192.168.1.1:1490 <span><i class="fa-brands fa-telegram"></i></span>
+                                                <td>
+                                                    <span class="ip">192.168.1.1:1490 </span> 
+                                                    <span>
+                                                        <i class="fa-brands fa-telegram"></i>
+                                                    </span>
                                                 </td>
                                                 <td>
-                                                    <input id="toggle-ip" type="checkbox" type="checkbox"
-                                                        data-toggle="toggle" data-on="ip" data-off="login / pass">
-                                                    <div id="login-pass" class="form">
-                                                        <input class="textfield" type="text" disabled
-                                                            placeholder="Username" value="Kidux" />
-                                                        <input class="password" type="password"
-                                                            placeholder="Password" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
+                                                    <div id="LabelContainer" class="">
+                                                        <div id="LoginPassContainer"
+                                                            class="d-flex flex-column text-start gap-1">
+                                                            <div class="fw-blod">
+                                                                <label>Login: </label>
+                                                                <span id="UserLabel" class="user" onclick="showHideFormContainer()">sssda</span>
+                                                            </div>
+                                                            <div>
+                                                                <label>Password: </label>
+                                                                <span id="PassLabel" class="pass"  onclick="showHideFormContainer()"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div id="IpContainer"
+                                                            class="d-flex flex-column text-start hidden">
+                                                            <div class="fw-blod">
+                                                                <span id="IpLabel" class="ip"  onclick="showHideFormContainer()"></span>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div id="ip" class="form hidden">
-                                                        <input class="textfield" type="text" placeholder="IP"
-                                                            value="" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <span>4 days, 21 hours</span>
-                                                    <br>
-                                                    <div
-                                                        class="buttons-container mt-2 d-flex align-items-center justify-content-center">
-                                                        <a title="Renew the package" href="#"
-                                                            class="d-flex btn btn-primary align-items-center justify-content-center me-1"><span
-                                                                class="me-1" style="font-size: 0.5rem;"><i
-                                                                    class="fa-solid fa-plus"></i></span><i
-                                                                class="fa-regular fa-hourglass-half fa-xs"></i></a>
-                                                        <a title="Add pauses" href="#"
-                                                            class="d-flex btn btn-primary align-items-center justify-content-center"><span
-                                                                class="me-1" style="font-size: 0.5rem;"><i
-                                                                    class="fa-solid fa-plus fa-xs"></i></span><i
-                                                                class="fa-solid fa-pause fa-xs"></i></a>
-                                                    </div>
-                                                </td>
-                                                <td><span class="me-1"><i class="fa-solid fa-check"></i></span> Active
-                                                </td>
-                                                <td><span class="icon-sm"><img title="No Pauses available"
-                                                            src="assets/images/dashboard/active packages/block.png" /></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" /></td>
-                                                <td>48917</td>
-                                                <td>
-                                                    (France) <a class="link" href="">Personal Proxy <i
-                                                            class="fa-solid fa-pencil"></i></a>
-                                                    <br />
-                                                    <a href="#" class="btn btn-primary">Change PTR</a>
-                                                </td>
-                                                <td>192.168.1.1:1490 <span><i class="fa-brands fa-telegram"></i></span>
-                                                </td>
-                                                <td>
-                                                    <input id="toggle-ip" type="checkbox" type="checkbox"
-                                                        data-toggle="toggle" data-on="ip" data-off="login / pass">
-                                                    <div id="login-pass" class="form">
-                                                        <input class="textfield" type="text" disabled
-                                                            placeholder="Username" value="Kidux" />
-                                                        <input class="password" type="password"
-                                                            placeholder="Password" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
-                                                    </div>
-                                                    <div id="ip" class="form hidden">
-                                                        <input class="textfield" type="text" placeholder="IP"
-                                                            value="" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <span>4 days, 21 hours</span>
-                                                    <br>
-                                                    <div
-                                                        class="buttons-container mt-2 d-flex align-items-center justify-content-center">
-                                                        <a title="Renew the package" href="#"
-                                                            class="d-flex btn btn-primary align-items-center justify-content-center me-1"><span
-                                                                class="me-1" style="font-size: 0.5rem;"><i
-                                                                    class="fa-solid fa-plus"></i></span><i
-                                                                class="fa-regular fa-hourglass-half fa-xs"></i></a>
-                                                        <a title="Add pauses" href="#"
-                                                            class="d-flex btn btn-primary align-items-center justify-content-center"><span
-                                                                class="me-1" style="font-size: 0.5rem;"><i
-                                                                    class="fa-solid fa-plus fa-xs"></i></span><i
-                                                                class="fa-solid fa-pause fa-xs"></i></a>
-                                                    </div>
-                                                </td>
-                                                <td><span class="me-1"><i class="fa-solid fa-check"></i></span> Active
-                                                </td>
-                                                <td><span class="icon-sm"><img title="No Pauses available"
-                                                            src="assets/images/dashboard/active packages/block.png" /></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" /></td>
-                                                <td>48917</td>
-                                                <td>
-                                                    (France) <a class="link" href="">Personal Proxy <i
-                                                            class="fa-solid fa-pencil"></i></a>
-                                                    <br />
-                                                    <a href="#" class="btn btn-primary">Change PTR</a>
-                                                </td>
-                                                <td>192.168.1.1:1490 <span><i class="fa-brands fa-telegram"></i></span>
-                                                </td>
-                                                <td>
-                                                    <input id="toggle-ip" type="checkbox" type="checkbox"
-                                                        data-toggle="toggle" data-on="ip" data-off="login / pass">
-                                                    <div id="login-pass" class="form">
-                                                        <input class="textfield" type="text" disabled
-                                                            placeholder="Username" value="Kidux" />
-                                                        <input class="password" type="password"
-                                                            placeholder="Password" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
-                                                    </div>
-                                                    <div id="ip" class="form hidden">
-                                                        <input class="textfield" type="text" placeholder="IP"
-                                                            value="" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <span>4 days, 21 hours</span>
-                                                    <br>
-                                                    <div
-                                                        class="buttons-container mt-2 d-flex align-items-center justify-content-center">
-                                                        <a title="Renew the package" href="#"
-                                                            class="d-flex btn btn-primary align-items-center justify-content-center me-1"><span
-                                                                class="me-1" style="font-size: 0.5rem;"><i
-                                                                    class="fa-solid fa-plus"></i></span><i
-                                                                class="fa-regular fa-hourglass-half fa-xs"></i></a>
-                                                        <a title="Add pauses" href="#"
-                                                            class="d-flex btn btn-primary align-items-center justify-content-center"><span
-                                                                class="me-1" style="font-size: 0.5rem;"><i
-                                                                    class="fa-solid fa-plus fa-xs"></i></span><i
-                                                                class="fa-solid fa-pause fa-xs"></i></a>
-                                                    </div>
-                                                </td>
-                                                <td><span class="me-1"><i class="fa-solid fa-check"></i></span> Active
-                                                </td>
-                                                <td><span class="icon-sm"><img title="No Pauses available"
-                                                            src="assets/images/dashboard/active packages/block.png" /></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" /></td>
-                                                <td>48917</td>
-                                                <td>
-                                                    (France) <a class="link" href="">Personal Proxy <i
-                                                            class="fa-solid fa-pencil"></i></a>
-                                                    <br />
-                                                    <a href="#" class="btn btn-primary">Change PTR</a>
-                                                </td>
-                                                <td>192.168.1.1:1490 <span><i class="fa-brands fa-telegram"></i></span>
-                                                </td>
-                                                <td>
-                                                    <input id="toggle-ip" type="checkbox" type="checkbox"
-                                                        data-toggle="toggle" data-on="ip" data-off="login / pass">
-                                                    <div id="login-pass" class="form">
-                                                        <input class="textfield" type="text" disabled
-                                                            placeholder="Username" value="Kidux" />
-                                                        <input class="password" type="password"
-                                                            placeholder="Password" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
-                                                    </div>
-                                                    <div id="ip" class="form hidden">
-                                                        <input class="textfield" type="text" placeholder="IP"
-                                                            value="" />
-                                                        <br>
-                                                        <a href="#" class="btn btn-primary">Save</a>
+                                                    <div id="FormContainer" class="hidden">
+                                                        <input id="toggle-ip" type="checkbox" type="checkbox"
+                                                            data-toggle="toggle" data-on="ip" data-off="login / pass">
+                                                        <div id="login-pass" class="form">
+                                                            <input id="Usernaem" class="textfield" type="text" disabled
+                                                                placeholder="Username" value="Kidux" />
+                                                            <input id="Password" class="password" type="text"
+                                                                placeholder="Password" value="xzczxcc" />
+                                                            <br>
+                                                            <a href="#" class="btn btn-primary d-none">Save</a>
+                                                        </div>
+                                                        <div id="ip" class="form hidden">
+                                                            <input id="IP" class="textfield" type="text" placeholder="IP"
+                                                                value="192.168.1.1" />
+                                                            <br>
+                                                            <a href="#" class="btn btn-primary">Save</a>
+                                                        </div>
                                                     </div>
                                                 </td>
                                                 <td>
