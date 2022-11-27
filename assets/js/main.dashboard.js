@@ -2,6 +2,16 @@
 Template Name: RSocks - Startup & SaaS Bootstrap 5 Template.
 Author: Mr. Waoow
 */
+const formatAMPM = (date) => {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+}
 
 const toggleIp = $("#toggle-ip");
 const loginPassContainer = document.getElementById("LoginPassContainer");
@@ -61,6 +71,33 @@ toggleIp.change(() => {
     }
 });
 
+
+//chats
+const addChat = () => {
+    const chats = document.getElementById("Chats");
+    const time = formatAMPM(new Date);
+    const massage = document.getElementById("Massage");
+    const chat = `
+                                            <div class="chat">
+                                                <div class="chat-avatar">
+                                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="right"
+                                                        title="" data-original-title="Clients">
+                                                        <img src="assets/images/dashboard/chat/Client.png">
+                                                    </a>
+                                                </div>
+                                                <div class="chat-body">
+                                                    <div class="chat-content">
+                                                        <p>
+                                                            ${massage.value}
+                                                        </p>
+                                                        <time class="chat-time">${time}</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+    `
+    chats.innerHTML += chat;
+};
+
 (($) => {
     "use strict";
 
@@ -119,6 +156,7 @@ toggleIp.change(() => {
     var dt = new Date();
     if (document.getElementById("datetime")) {
         document.getElementById("datetime").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "  " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " GMT+2";
+        document.getElementById("datetime1").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "  " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " GMT+2";
     }
     //Login, pass, op lable
     const username = document.getElementById("Usernaem");
@@ -127,9 +165,9 @@ toggleIp.change(() => {
     const userLabel = document.getElementById("UserLabel");
     const passLabel = document.getElementById("PassLabel");
     const IpLabel = document.getElementById("IpLabel");
-
-    userLabel.innerHTML = username.value;
-    passLabel.innerHTML = password.value;
-    IpLabel.innerHTML = Ip.value;
-
+    if (userLabel) {
+        userLabel.innerHTML = username.value;
+        passLabel.innerHTML = password.value;
+        IpLabel.innerHTML = Ip.value;
+    }
 })(jQuery);

@@ -169,12 +169,25 @@
                     <div class="icon-sm"><img src="assets/images/dashboard/toglleline.png" /></div>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item d-flex gap-3 flex-wrap align-items-center justify-content-center">
+                    <div class="nav-item lg-show gap-3 flex-wrap align-items-center justify-content-center">
                         <span><i class="fa-regular fa-clock me-1"></i><span id="datetime"></span></span>
                         <span style="text-transform: uppercase;">ip: <span> 192.168.1.1</span></span>
                         <span style="text-transform: uppercase; font-weight: 600;">$ <span> -1.00</span></span>
                     </div>
-                    <div class="nav-item dropdown no-style">
+                    <div class="nav-item dropdown lg-hidden no-style">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #3463cd;">
+                            <span class="fw-bold">See more</span>
+                            <span class="ms-1 icon-sm"><i class="fa-solid fa-caret-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0 p-2">
+                            <span><i class="fa-regular fa-clock me-1"></i><span id="datetime1"></span></span>
+                            <br>
+                            <span style="text-transform: uppercase;">ip: <span> 192.168.1.1</span></span>
+                            <br>
+                            <span style="text-transform: uppercase; font-weight: 600;">$ <span> -1.00</span></span>
+                        </div>
+                    </div>
+                    <div class="nav-item user-info dropdown no-style">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <div class="icon-sm"><img class="rounded-circle me-lg-2"
                                     src="assets/images/dashboard/user.jpg" alt=""></div>
@@ -317,8 +330,8 @@
                                                 </tbody>
                                             </table>
                                             <div class="header-title text-end">
-                                                <a href="dashboard.personal.html" class="btn btn-primary py-1 px-2">more information <i
-                                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                                                <a href="dashboard.personal.html" class="btn btn-primary py-1 px-2">more
+                                                    information <i class="fa-solid fa-arrow-right ms-1"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -591,7 +604,8 @@
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a style="text-decoration: none;" href="https://github.com/MrWaoow?tab=repositories">Mr. Waoow</a>
+                            Designed By <a style="text-decoration: none;"
+                                href="https://github.com/MrWaoow?tab=repositories">Mr. Waoow</a>
                         </div>
                     </div>
                 </div>

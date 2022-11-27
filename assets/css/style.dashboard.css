@@ -141,8 +141,16 @@ img {
     font-weight: bold;
 }
 
-.r-border{
+.r-border {
     border-right: 0.2rem solid #19b977;
+}
+
+.lg-show {
+    display: flex;
+}
+
+.lg-hidden {
+    display: none;
 }
 
 
@@ -356,6 +364,10 @@ header.header .nav-box ul .ul-item:hover {
     cursor: pointer;
 }
 
+.navbar-nav {
+    position: relative;
+}
+
 header.header .navbar .navbar-nav .nav-item {
     margin-left: 15px;
     color: #888888;
@@ -376,13 +388,17 @@ header.header .navbar .navbar-nav .nav-item.no-style {
     font-size: 1rem;
 }
 
-header.header .navbar .navbar-nav .nav-item.d-flex {
-    margin-right: 3rem;
-}
-
-header.header .navbar .navbar-nav .nav-item.dropdown {
+header.header .navbar .navbar-nav .user-info {
     position: absolute;
     right: 0%;
+}
+
+.nav-item.lg-show {
+    margin-right: 4rem;
+}
+
+.dropdown.lg-hidden {
+    margin-right: 4rem;
 }
 
 
@@ -818,13 +834,13 @@ header.header .navbar .navbar-nav .nav-item.dropdown {
 
 .active-packages .packages-box .table-box table.table tbody td span.user,
 .active-packages .packages-box .table-box table.table tbody td span.pass,
-.active-packages .packages-box .table-box table.table tbody td span.ip{
-text-decoration-line: underline;
+.active-packages .packages-box .table-box table.table tbody td span.ip {
+    text-decoration-line: underline;
 }
 
 .active-packages .packages-box .table-box table.table tbody td span.pass,
-.active-packages .packages-box .table-box table.table tbody td span.ip{
-text-decoration-style: dashed;
+.active-packages .packages-box .table-box table.table tbody td span.ip {
+    text-decoration-style: dashed;
 }
 
 .active-packages .packages-box .table-box table.table tbody td .btn.btn-primary {
@@ -902,8 +918,8 @@ text-decoration-style: dashed;
 
 .active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) span.user,
 .active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) span.pass,
-.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) span.ip{
-cursor: pointer;
+.active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) span.ip {
+    cursor: pointer;
 }
 
 .active-packages .packages-box .table-box table.table tbody td:nth-of-type(5) div.toggle.btn.btn-primary .toggle-group label.btn.btn-primary.toggle-on,
@@ -1131,6 +1147,159 @@ cursor: pointer;
     font-size: 0.75rem !important;
 }
 
+/*=============================
+	Chat CSS
+===============================*/
+.chat-panel{
+    background-color: #fff;
+    padding: 1rem;
+}
+.panel-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.05rem solid #0000001a;
+}
+.panel-heading .chat-avatar {
+    float: left;
+}
+
+.panel-heading .chat-avatar .avatar {
+    width: 3rem;
+}
+.chat-box {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.chat-avatar {
+    float: right
+}
+
+.chat-avatar .avatar {
+    width: 1.9rem;
+    -webkit-box-shadow: 0rem 0.1rem 0.1rem 0rem #00000033, 0rem 0.4rem 0.6rem 0rem #0000004d;
+    box-shadow: 0rem 0.1rem 0.1rem 0rem #00000033, 0rem 0.4rem 0.6rem 0rem #0000004d;
+}
+
+.chat-body {
+    display: block;
+    margin: 0.6rem 1.9rem 0rem 0rem;
+    overflow: hidden;
+}
+
+.chat-body:first-child {
+    margin-top: 0;
+}
+
+.chat-content {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.5rem 0.9rem;
+    margin: 0rem 1.3rem 0.6rem 0rem;
+    clear: both;
+    color: #fff;
+    background-color: #2086e7;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 0rem 0.05rem 0.3rem 0rem #0000005e;
+    box-shadow: 0rem 0.05rem 0.3rem 0rem #0000005e;
+}
+
+.chat-content:before {
+    position: absolute;
+    top: 0.6rem;
+    right: -0.6rem;
+    width: 0rem;
+    height: 0rem;
+    content: '';
+    border: 0.3rem solid transparent;
+    border-left-color: #2086e7;
+}
+
+.chat-content>p:last-child {
+    margin-bottom: 0rem;
+}
+
+.chat-content+.chat-content:before {
+    border-color: transparent;
+}
+
+.chat-time {
+    display: block;
+    margin-top: 0.5rem;
+    color: #ffffff99;
+}
+
+.chat-left .chat-avatar {
+    float: left;
+}
+
+.chat-left .chat-body {
+    margin-right: 0rem;
+    margin-left: 1.9rem;
+}
+
+.chat-left .chat-content {
+    float: left;
+    margin: 0rem 0rem 0.6rem 1.3rem;
+    color: #76838f;
+    background-color: #d4ffe8;
+}
+
+.chat-left .chat-content:before {
+    right: auto;
+    left: -0.6rem;
+    border-right-color: #d4ffe8;
+    border-left-color: transparent;
+}
+
+.chat-left .chat-content+.chat-content:before {
+    border-color: transparent;
+}
+
+.chat-left .chat-time {
+    color: #a3afb7;
+}
+
+.panel-footer {
+    padding: 0 1.9rem 1rem;
+    background-color: transparent;
+    border-top: 0.05rem solid transparent;
+    border-bottom-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.panel-footer .form-control:focus {
+    box-shadow: 0 0 0.3rem 0rem #0d6efd40;
+}
+
+.avatar img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0 none;
+    border-radius: 50%;
+}
+
+.chat-avatar .avatar {
+    width: 1.9rem;
+}
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 2.5rem;
+    white-space: nowrap;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+
+
+
 /*** Notifications ***/
 
 .notifications {
@@ -1219,5 +1388,13 @@ footer.footer {
     .buy-personal-proxy .header-title {
         text-align: start !important;
         display: grid;
+    }
+
+    .lg-show {
+        display: none;
+    }
+
+    .lg-hidden {
+        display: block;
     }
 }
