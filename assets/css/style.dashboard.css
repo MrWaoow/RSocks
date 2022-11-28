@@ -1151,17 +1151,22 @@ header.header .navbar .navbar-nav .user-info {
 	Chat CSS
 ===============================*/
 .chat-panel {
-    background-color: #fff;
-    padding: 1rem;
     width: 100%;
+    box-shadow: 0px 0px 5px 0px #0000000f;
+    border-radius: 0.7rem;
 }
 
 .panel-heading {
+    position: sticky;
+    background-color: #fff;
+    top: 2.95rem;
     display: flex;
     align-items: center;
+    padding: 1rem;
     gap: 0.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.05rem solid #0000001a;
+    border: 0.05rem solid #0000001a;
+    border-radius: 0.7rem 0.7rem 0rem 0rem;
+    z-index: 2;
 }
 
 .panel-heading .chat-avatar {
@@ -1178,7 +1183,11 @@ header.header .navbar .navbar-nav .user-info {
     background-color: #fff;
     overflow: hidden
 }
-
+.panel-body {
+    border-left: 0.05rem solid #0000001a;
+    border-right: 0.05rem solid #0000001a;
+    background-color: #fff;
+}
 .panel-body .chats {
     padding: 1rem;
 }
@@ -1275,11 +1284,15 @@ header.header .navbar .navbar-nav .user-info {
 }
 
 .panel-footer {
-    padding: 0 1.9rem 1rem;
-    background-color: transparent;
-    border-top: 0.05rem solid transparent;
-    border-bottom-right-radius: 0.2rem;
-    border-bottom-left-radius: 0.2rem;
+    padding: 1rem 0.2rem;
+    position: sticky;
+    background-color: #fff;
+    bottom: 0rem;
+    gap: 0.5rem;
+    border: 0.05rem solid #0000001a;
+    border-top: none;
+    border-radius: 0rem 0rem 0.7rem 0.7rem;
+    z-index: 2;
 }
 
 .panel-footer .form-control:focus {

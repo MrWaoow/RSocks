@@ -73,6 +73,9 @@ toggleIp.change(() => {
 
 
 //chats
+const scrollDown= () => {
+    window.scrollTo(0, document.body.scrollHeight);
+};
 const addChat = () => {
     const chats = document.getElementById("Chats");
     const time = formatAMPM(new Date);
@@ -95,10 +98,13 @@ const addChat = () => {
                                                 </div>
                                             </div>
     `
-    if (massage.value != "")
+    if (massage.value != "") {
+        window.scrollTo(0, document.body.scrollHeight);
         chats.innerHTML += chat;
         massage.value = "";
+    }
 };
+
 
 (($) => {
     "use strict";
