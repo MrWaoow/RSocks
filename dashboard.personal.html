@@ -187,8 +187,9 @@
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0 p-2">
                             <span class="dropdown-item fw-bold">$ 0.00</span>
                             <a href="#" class="dropdown-item btn fw-bold my-2">Replenish the balance</a>
-                            <a href="dashboard.chat.html" class="dropdown-item btn fw-bold sec"><span class="icon-sm me-2"><i
-                                        class="fa-solid fa-circle-info"></i></span>Contact the CEO</a>
+                            <a href="dashboard.chat.html" class="dropdown-item btn fw-bold sec"><span
+                                    class="icon-sm me-2"><i class="fa-solid fa-circle-info"></i></span>Contact the
+                                CEO</a>
                         </div>
                     </div>
                     <div class="nav-item user-info dropdown no-style">
@@ -223,14 +224,35 @@
                         <a href="#" class="btn fw-bold sec p-2 my-2"><span class="icon-sm me-2"><i
                                     class="fa-solid fa-download"></i></span>All proxy as one in .txt</a>
                     </div>
-                    <a href="#" class="btn fw-bold p-4">
+                    <a onclick="buyMore()" href="#" class="btn fw-bold p-4">
                         <span class="d-block">
                             <i class="fa-solid fa-cart-shopping fa-2x"></i>
                         </span>
                         buy more
                     </a>
                 </div>
-
+                <!-- Start Popup -->
+                <div class="popup">
+                    <div class="modal hidden" id="modal">
+                        <header class="modal__card_head py-4">
+                            <h3></h3>
+                            <a id="close"><i class="fas fa-times"></i></a>
+                        </header>
+                        <div class="container">
+                            <div class="row py-5">
+                            </div>
+                            <div class="row py-5">
+                            </div>
+                            <div class="row py-5">
+                            </div>
+                            <div class="row py-5">
+                            </div>
+                            <div class="row py-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Popup -->
             </div>
         </header>
         <!-- Navbar End -->

@@ -105,6 +105,27 @@ const addChat = () => {
     }
 };
 
+//Pop up
+
+const closeBtn = document.getElementById("close");
+const modalMenu = document.getElementById("modal");
+const modalBtn = document.querySelector(".modal__button");
+//const viewMoreBtn = document.querySelectorAll(".contentBx a")
+
+const buyMore = () => { modalMenu.classList.remove("hidden") }
+
+closeBtn.addEventListener("click", () => { modalMenu.classList.add("hidden") });
+//hide it when clicking anywhere else except the popup and the trigger
+document.addEventListener("click", (event) => {
+    if (!$(event.target).parents().addBack().is('a')) {
+        modalMenu.classList.add("hidden");
+    }
+});
+
+// Stop propagation to prevent hiding "#tooltip" when clicking on it
+modalMenu.addEventListener("click", (event) => {
+    event.stopPropagation();
+});
 
 (($) => {
     "use strict";
