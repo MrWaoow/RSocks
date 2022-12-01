@@ -239,6 +239,16 @@ span.new {
     color: #fff;
     background-color: #3b6ad8;
 }
+.btn.btn-first {
+    background-color: #19b977 !important;
+}
+.btn.btn-first:hover,
+.btn.btn-first:active,
+.btn.btn-first:focus,
+.btn.btn-first:focus-visible {
+    color: #fff;
+    background-color: #16aa6d !important;
+}
 
 .btn.btn-primary {
     color: #FFFFFF;
@@ -1320,44 +1330,107 @@ header.header .navbar .navbar-nav .user-info {
     vertical-align: bottom;
 }
 
+/*=============================
+	Contact us CSS
+===============================*/
 
-
-/*** Notifications ***/
-
-.notifications {
-    display: grid;
+.contact-us .news-box {
+    background-color: #fff;
 }
 
-/*** Testimonial ***/
-.progress .progress-bar {
-    width: 0px;
-    transition: 2s;
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-dots {
-    margin-top: 24px;
+.contact-us .header-title {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    padding: 0.5rem 1rem;
 }
 
-.testimonial-carousel .owl-dot {
+.contact-us .header-title .title {
+    text-align: start;
+    flex-basis: 40%;
+}
+
+.contact-us .header-title .buttons-container {
+    text-align: end;
+    flex-basis: 60%;
+}
+
+.contact-us .balance.news-box .header-title .btn.btn-primary,
+.contact-us .promo-code.news-box .content-box .btn.btn-primary {
+    background-color: #18b372;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.contact-us .balance.news-box .header-title .btn.btn-primary:hover,
+.contact-us .promo-code.news-box .content-box .btn.btn-primary:hover {
+    background-color: #149b62;
+}
+
+
+.contact-us .balance.news-box table tbody tr {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us .balance.news-box table tbody tr td {
+    padding-bottom: 1rem;
     position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 5px solid var(--primary);
-    border-radius: 15px;
-    transition: .5s;
 }
 
-.testimonial-carousel .owl-dot.active {
-    background: var(--dark);
-    border-color: var(--primary);
+.contact-us .balance.news-box input.parsley-success,
+.contact-us .balance.news-box select.parsley-success,
+.contact-us .balance.news-box textarea.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
 }
+
+.contact-us .balance.news-box label {
+    transition: all 0.1s linear;
+    font-weight: bold;
+}
+
+.contact-us .balance.news-box label.on {
+    color: #4481C4;
+}
+
+.contact-us .balance.news-box label.show {
+    top: -15px;
+    opacity: 1;
+}
+
+.contact-us .balance.news-box table tbody tr td .textfield,
+.contact-us .balance.news-box table tbody tr td .form-control {
+    padding: 0rem 1rem;
+    border: 0.1rem solid #0000001f;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 100%;
+    min-height: 3rem;
+}
+
+.contact-us .balance.news-box table tbody tr td .textfield:focus-visible,
+.contact-us .balance.news-box table tbody tr td .form-control:focus-visible,
+.contact-us .balance.news-box table tbody tr td .textfield:focus,
+.contact-us .balance.news-box table tbody tr td .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0rem #18b372;
+}
+
+.contact-us .balance.news-box table tbody tr td .form-control {
+    padding: 0.5rem 1rem;
+    min-height: 15rem;
+}
+
+.contact-us .balance.news-box table tbody tr td .btn {
+    border-radius: 0.2rem;
+    font-size: 1rem !important;
+    font-weight: 600;
+}
+
+
+/*=============================
+ Footer CSS
+===============================*/
 
 footer.footer {
     background-color: #fff;
