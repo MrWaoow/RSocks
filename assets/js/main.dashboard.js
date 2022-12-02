@@ -73,7 +73,7 @@ toggleIp.change(() => {
 
 
 //chats
-const scrollDown= () => {
+const scrollDown = () => {
     window.scrollTo(0, document.body.scrollHeight);
 };
 const addChat = () => {
@@ -113,19 +113,21 @@ const modalBtn = document.querySelector(".modal__button");
 //const viewMoreBtn = document.querySelectorAll(".contentBx a")
 
 const buyMore = () => { modalMenu.classList.remove("hidden") }
+if (closeBtn) {
+    closeBtn.addEventListener("click", () => { modalMenu.classList.add("hidden") });
+    //hide it when clicking anywhere else except the popup and the trigger
+    document.addEventListener("click", (event) => {
+        if (!$(event.target).parents().addBack().is('a')) {
+            modalMenu.classList.add("hidden");
+        }
+    });
 
-closeBtn.addEventListener("click", () => { modalMenu.classList.add("hidden") });
-//hide it when clicking anywhere else except the popup and the trigger
-document.addEventListener("click", (event) => {
-    if (!$(event.target).parents().addBack().is('a')) {
-        modalMenu.classList.add("hidden");
-    }
-});
+    // Stop propagation to prevent hiding "#tooltip" when clicking on it
+    modalMenu.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
 
-// Stop propagation to prevent hiding "#tooltip" when clicking on it
-modalMenu.addEventListener("click", (event) => {
-    event.stopPropagation();
-});
+}
 
 (($) => {
     "use strict";

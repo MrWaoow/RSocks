@@ -5,6 +5,20 @@
     --dark: #000;
 }
 
+.chat-btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem !important;
+    right: 1rem;
+    bottom: 1rem;
+    height: 4rem;
+    width: 4rem;
+    z-index: 99;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
