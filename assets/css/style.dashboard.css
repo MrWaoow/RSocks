@@ -1419,7 +1419,7 @@ header.header .navbar .navbar-nav .user-info {
     position: relative;
     background: url(../images/dashboard/map.png)no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 .contact-us:before {
     background-color: #e8f9f0f2;
