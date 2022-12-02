@@ -13,7 +13,8 @@
     bottom: 1rem;
     z-index: 99;
 }
-.chat-btn img{
+
+.chat-btn img {
     height: 2rem;
     width: 2rem;
 }
@@ -27,7 +28,7 @@
 }
 
 body {
-    font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.8rem !important;
     color: #646464 !important;
 
@@ -252,9 +253,11 @@ span.new {
     color: #fff;
     background-color: #3b6ad8;
 }
+
 .btn.btn-first {
     background-color: #19b977 !important;
 }
+
 .btn.btn-first:hover,
 .btn.btn-first:active,
 .btn.btn-first:focus,
@@ -876,8 +879,7 @@ header.header .navbar .navbar-nav .user-info {
     margin-bottom: 10px;
 }
 
-.modal .modal__card_head h3 {
-}
+.modal .modal__card_head h3 {}
 
 .popup {
     text-align: center;
@@ -1269,11 +1271,13 @@ header.header .navbar .navbar-nav .user-info {
     background-color: #fff;
     overflow: hidden
 }
+
 .panel-body {
     border-left: 0.05rem solid #0000001a;
     border-right: 0.05rem solid #0000001a;
     background-color: #fff;
 }
+
 .panel-body .chats {
     padding: 1rem;
 }
@@ -1410,94 +1414,143 @@ header.header .navbar .navbar-nav .user-info {
 	Contact us CSS
 ===============================*/
 
-.contact-us .news-box {
-    background-color: #fff;
+.contact-us {
+    color: #444;
+    position: relative;
+    background: url(../images/dashboard/map.png)no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.contact-us:before {
+    background-color: #e8f9f0f2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+.contact-us .par-content {
+    margin: 1rem auto;
+    width: 80%;
+    font-size: 1rem;
 }
 
-.contact-us .header-title {
-    display: flex;
-    padding: 0.5rem 1rem;
-}
-
-.contact-us .header-title .title {
+.contact-us h5 {
     text-align: start;
-    flex-basis: 40%;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
-.contact-us .header-title .buttons-container {
-    text-align: end;
-    flex-basis: 60%;
+.contact-us .contents {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
 
-.contact-us .balance.news-box .header-title .btn.btn-primary,
-.contact-us .promo-code.news-box .content-box .btn.btn-primary {
-    background-color: #18b372;
-    border-radius: 0.2rem;
-    border: none;
+.contact-us .contents .content-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #414141;
 }
 
-.contact-us .balance.news-box .header-title .btn.btn-primary:hover,
-.contact-us .promo-code.news-box .content-box .btn.btn-primary:hover {
-    background-color: #149b62;
+.contact-us .contents .content-box a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us .contents.highlight {
+    position: relative;
+}
+
+.contact-us .contents.highlight::before {
+    background-color: #72ff9775;
+    border-radius: 0.7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: calc(100% + 36px);
+    height: calc(100% + 18px);
+    margin-top: -9px;
+    margin-left: -18px;
+    content: '';
+    border: 0.06rem solid #6FC285;
+}
+
+.contact-us .contents .font-icon {
+    position: relative;
+    color: #414141;
+    margin-right: 1rem;
+}
+
+label.control-label {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
 
-.contact-us .balance.news-box table tbody tr {
+.contact-us table tbody tr {
     align-items: center;
     justify-content: space-between;
 }
 
-.contact-us .balance.news-box table tbody tr td {
+.contact-us table tbody tr td {
     padding-bottom: 1rem;
     position: relative;
 }
 
-.contact-us .balance.news-box input.parsley-success,
-.contact-us .balance.news-box select.parsley-success,
-.contact-us .balance.news-box textarea.parsley-success {
+.contact-us input.parsley-success,
+.contact-us select.parsley-success,
+.contact-us textarea.parsley-success {
     color: #468847;
     background-color: #DFF0D8;
     border: 1px solid #D6E9C6;
 }
 
-.contact-us .balance.news-box label {
+.contact-us label {
     transition: all 0.1s linear;
     font-weight: bold;
 }
 
-.contact-us .balance.news-box label.on {
+.contact-us label.on {
     color: #4481C4;
 }
 
-.contact-us .balance.news-box label.show {
+.contact-us label.show {
     top: -15px;
     opacity: 1;
 }
 
-.contact-us .balance.news-box table tbody tr td .textfield,
-.contact-us .balance.news-box table tbody tr td .form-control {
+.contact-us table tbody tr td .textfield,
+.contact-us table tbody tr td .form-control {
     padding: 0rem 1rem;
     border: 0.1rem solid #0000001f;
-    border-radius: 0.2rem;
+    border-radius: 0.18rem;
     font-size: 1rem;
     width: 100%;
     min-height: 3rem;
+    background-color: #72ff9775;
 }
 
-.contact-us .balance.news-box table tbody tr td .textfield:focus-visible,
-.contact-us .balance.news-box table tbody tr td .form-control:focus-visible,
-.contact-us .balance.news-box table tbody tr td .textfield:focus,
-.contact-us .balance.news-box table tbody tr td .form-control:focus {
+.contact-us table tbody tr td .textfield:focus-visible,
+.contact-us tbody tr td .form-control:focus-visible,
+.contact-us table tbody tr td .textfield:focus,
+.contact-us table tbody tr td .form-control:focus {
     outline: none;
     box-shadow: 0 0 5px 0rem #18b372;
 }
 
-.contact-us .balance.news-box table tbody tr td .form-control {
+.contact-us table tbody tr td .form-control {
     padding: 0.5rem 1rem;
     min-height: 15rem;
 }
 
-.contact-us .balance.news-box table tbody tr td .btn {
+.contact-us table tbody tr td .btn {
     border-radius: 0.2rem;
     font-size: 1rem !important;
     font-weight: 600;
