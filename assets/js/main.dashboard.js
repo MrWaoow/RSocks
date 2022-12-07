@@ -106,28 +106,17 @@ const addChat = () => {
 };
 
 //Pop up
-
-const closeBtn = document.getElementById("close");
-const modalMenu = document.getElementById("modal");
-const modalBtn = document.querySelector(".modal__button");
-//const viewMoreBtn = document.querySelectorAll(".contentBx a")
-
-const buyMore = () => { modalMenu.classList.remove("hidden") }
-if (closeBtn) {
-    closeBtn.addEventListener("click", () => { modalMenu.classList.add("hidden") });
-    //hide it when clicking anywhere else except the popup and the trigger
-    document.addEventListener("click", (event) => {
-        if (!$(event.target).parents().addBack().is('a')) {
-            modalMenu.classList.add("hidden");
-        }
-    });
-
-    // Stop propagation to prevent hiding "#tooltip" when clicking on it
-    modalMenu.addEventListener("click", (event) => {
-        event.stopPropagation();
-    });
-
-}
+let openCheck = "true";
+const buyMore = () => {
+    const sidePanel = document.getElementById("popUp")
+    if (openCheck == "true") {
+        openCheck = "false";
+        sidePanel.style.right = "19rem";
+    } else {
+        openCheck = "true"
+        sidePanel.style.right = "-1rem";
+    }
+};
 
 (($) => {
     "use strict";
@@ -185,9 +174,11 @@ if (closeBtn) {
 
     //Time and Date
     var dt = new Date();
-    if (document.getElementById("datetime")) {
-        document.getElementById("datetime").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "  " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " GMT+2";
-        document.getElementById("datetime1").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "  " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " GMT+2";
+    const date = document.getElementById("datetime");
+    const date1 = document.getElementById("datetime1");
+    if (date && date1) {
+        date.innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "  " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " GMT+2";
+        date1.innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (("0" + dt.getDate()).slice(-2)) + "  " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " GMT+2";
     }
     //Login, pass, op lable
     const username = document.getElementById("Usernaem");

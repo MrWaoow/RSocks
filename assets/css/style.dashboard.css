@@ -1,9 +1,36 @@
 /********** Template CSS **********/
 :root {
-    --primary: #18b372;
+    --primary: #2ca780;
     --light: #eee;
     --dark: #000;
+    --soft-green: #f5fffc;
+    --soft-green1: #e8fff3;
 }
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-soft-green {
+    background-color: var(--soft-green) !important;
+}
+
+.text-soft-green {
+    background-color: var(--soft-green) !important;
+}
+
+.bg-soft-green1 {
+    background-color: var(--soft-green1) !important;
+}
+
+.text-soft-green1 {
+    background-color: var(--soft-green1) !important;
+}
+
 
 .chat-btn {
     padding: 0.5rem;
@@ -25,6 +52,10 @@
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+
+.mr-7 {
+    margin-right: 3rem;
 }
 
 body {
@@ -324,6 +355,7 @@ span.new {
     min-height: 100vh;
     background-color: #e8f9f0;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 @media (min-width: 992px) {
@@ -363,7 +395,7 @@ span.new {
 
 /*** Navbar ***/
 header.header {
-    background-color: #eeeeee !important;
+    background-color: #eeeeee;
 }
 
 header.header .nav-box {
@@ -394,14 +426,16 @@ header.header .nav-box ul .ul-item:hover {
     position: relative;
 }
 
-header.header .navbar .navbar-nav .nav-item {
-    margin-left: 15px;
-    color: #888888;
+.box-br-sh {
     background-color: #cef1e459;
     padding: 0.3rem 1rem;
     border-radius: 1rem;
     box-shadow: inset 0px 0px 5px 1px #92ab9f3b;
     border: 0.05rem solid #00000014;
+}
+
+header.header .navbar .navbar-nav .nav-item {
+    margin-left: 15px;
 }
 
 
@@ -425,15 +459,6 @@ header.header .navbar .navbar-nav .user-info {
 
 .dropdown.lg-hidden {
     margin-right: 4rem;
-}
-
-
-@media (max-width: 768px) {
-
-    header.header .navbar .navbar-nav .nav-item,
-    header.header .navbar .navbar-nav .nav-item .btn {
-        font-size: 0.7rem !important;
-    }
 }
 
 .sidebar .navbar .navbar-nav .nav-link {
@@ -828,65 +853,42 @@ header.header .navbar .navbar-nav .user-info {
 ===============================*/
 
 /* Start Pop up */
-
-.main__title {
-    font-size: 4rem
-}
-
-.main__paragraph {
-    font-size: 1.8rem
-}
-
-.modal__img {
-    max-width: 60%;
-    height: auto;
-    display: block;
-}
-
-.modal {
-    display: block;
-    max-width: 700px;
-    max-height: 680px;
-    width: 85%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    background-color: #fff;
-    overflow-y: auto;
-    height: auto;
-}
-
-.modal.show {
-    display: block
-}
-
-#close {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    font-size: 25px;
-    right: 0;
-    padding: 1rem;
-    margin-right: 10px;
-}
-
-.modal .modal__card_head {
-    text-align: left;
-    background-color: #19b97638;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.modal .modal__card_head h3 {}
-
 .popup {
-    text-align: center;
+    position: relative;
+    right: -1rem;
+    bottom: 3rem;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
 }
 
-.box_text {
-    text-align: left;
+#BuyMore {
+    position: absolute;
+    left: -7rem;
+}
+
+#BuyMore.btn:hover {
+    background-color: #0e965d;
+    color: #fff;
+}
+
+#BuyMore.btn:focus,
+#BuyMore.btn:focus-visible,
+#BuyMore.btn:active {
+    background-color: #0fa064;
+}
+
+.sidepanel {
+    position: absolute;
+    width: 20rem;
+    z-index: 1;
+    height: 225px;
+    top: 0px;
+    left: -12px;
+    background-color: rgb(120, 230, 193);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 /*** Active Packages ***/
@@ -906,11 +908,12 @@ header.header .navbar .navbar-nav .user-info {
 .active-packages .packages-box .table-box table.table {
     font-size: 0.8rem;
     margin-bottom: 3rem;
-    color: #646464 !important;
+    color: #3f3f3f !important;
 }
 
 .active-packages .packages-box .table-box table.table thead th {
     text-transform: capitalize;
+
 }
 
 .active-packages .packages-box .table-box table.table tbody td {
@@ -918,6 +921,17 @@ header.header .navbar .navbar-nav .user-info {
     text-align: center;
     padding: 0.5rem;
     vertical-align: middle;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.active-packages .packages-box .table-box table.table tbody tr:nth-of-type(odd) {
+    background-color: var(--soft-green);
+}
+
+.active-packages .packages-box .table-box table.table tbody tr:nth-of-type(even) {
+    background-color: var(--soft-green1);
 }
 
 .active-packages .packages-box .table-box table.table tbody td span.user,
@@ -1421,6 +1435,7 @@ header.header .navbar .navbar-nav .user-info {
     background-position: center;
     background-size: cover;
 }
+
 .contact-us:before {
     background-color: #e8f9f0f2;
     position: absolute;
@@ -1430,6 +1445,7 @@ header.header .navbar .navbar-nav .user-info {
     height: 100%;
     content: '';
 }
+
 .contact-us .par-content {
     margin: 1rem auto;
     width: 80%;
@@ -1455,7 +1471,7 @@ header.header .navbar .navbar-nav .user-info {
     color: #414141;
 }
 
-.contact-us .contents .content-box a{
+.contact-us .contents .content-box a {
     text-decoration: none;
     font-weight: bold;
 }

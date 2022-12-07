@@ -31,7 +31,7 @@
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -59,6 +59,12 @@
                 </div>
             </div>
             <div class="navbar-nav w-100">
+                <div class="nav-item d-sm-none d-flex gap-3 flex-column mb-3 mx-2 text-white">
+                    <span class="box-br-sh opacity-75"><i class="fa-regular fa-clock me-1"></i><span
+                            id="datetime1"></span></span>
+                    <span class="box-br-sh text-uppercase opacity-75">ip: <span> 192.168.1.1</span></span>
+                    <span class="box-br-sh text-uppercase fw-blod opacity-75">$ <span> -1.00</span></span>
+                </div>
                 <a href="dashboard.html" class="nav-item nav-link mb-2 active"><i
                         class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                 <div class="nav-item dropdown">
@@ -171,23 +177,12 @@
                     </a>
                 </div>
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item lg-show gap-3 flex-wrap align-items-center justify-content-center">
-                        <span><i class="fa-regular fa-clock me-1"></i><span id="datetime"></span></span>
-                        <span style="text-transform: uppercase;">ip: <span> 192.168.1.1</span></span>
-                        <span style="text-transform: uppercase; font-weight: 600;">$ <span> -1.00</span></span>
-                    </div>
-                    <div class="nav-item dropdown lg-hidden no-style">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #3463cd;">
-                            <span class="fw-bold">See more</span>
-                            <span class="ms-1 icon-sm"><i class="fa-solid fa-caret-down"></i></span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0 p-2">
-                            <span><i class="fa-regular fa-clock me-1"></i><span id="datetime1"></span></span>
-                            <br>
-                            <span style="text-transform: uppercase;">ip: <span> 192.168.1.1</span></span>
-                            <br>
-                            <span style="text-transform: uppercase; font-weight: 600;">$ <span> -1.00</span></span>
-                        </div>
+                    <div
+                        class="nav-item d-none d-sm-flex mr-7 gap-3 align-items-center justify-content-center">
+                        <span class="box-br-sh opacity-75"><i class="fa-regular fa-clock me-1"></i><span
+                                id="datetime"></span></span>
+                        <span class="box-br-sh text-uppercase opacity-75">ip: <span> 192.168.1.1</span></span>
+                        <span class="box-br-sh text-uppercase fw-blod opacity-75">$ <span> -1.00</span></span>
                     </div>
                     <div class="nav-item user-info dropdown no-style">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">

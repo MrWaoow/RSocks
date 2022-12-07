@@ -32,7 +32,7 @@
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="color: #149b62 !important; width: 3rem; height: 3rem;"
+        <div class="spinner-border" style="color: #149b62 !important; width: 3rem; height: 3rem;"
             role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -61,6 +61,12 @@
                 </div>
             </div>
             <div class="navbar-nav w-100">
+                <div class="nav-item d-sm-none d-flex gap-3 flex-column mb-3 mx-2 text-white">
+                    <span class="box-br-sh">$ 0.00</span>
+                    <a href="#" class="btn fw-bold">Replenish the balance</a>
+                    <a href="dashboard.contact.html" class="btn fw-bold sec"><span class="icon-sm me-2"><i
+                                class="fa-solid fa-circle-info"></i></span>Contact the CEO</a>
+                </div>
                 <a href="dashboard.html" class="nav-item nav-link mb-2"><i
                         class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                 <div class="nav-item dropdown">
@@ -174,9 +180,8 @@
                     </a>
                 </div>
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div
-                        class="nav-item lg-show fw-bold no-style gap-3 flex-wrap align-items-center justify-content-center">
-                        <span>$ 0.00</span>
+                    <div class="nav-item d-none d-sm-flex mr-7 gap-3 align-items-center justify-content-center">
+                        <span class="box-br-sh">$ 0.00</span>
                         <a href="#" class="btn fw-bold">Replenish the balance</a>
                         <a href="dashboard.contact.html" class="btn fw-bold sec"><span class="icon-sm me-2"><i
                                     class="fa-solid fa-circle-info"></i></span>Contact the CEO</a>
@@ -187,7 +192,7 @@
                             <span class="ms-1 icon-sm"><i class="fa-solid fa-caret-down"></i></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0 p-2">
-                            <span class="dropdown-item fw-bold">$ 0.00</span>
+                            <span class="dropdown-item fw-bold box-br-sh text-center">$ 0.00</span>
                             <a href="#" class="dropdown-item btn fw-bold my-2">Replenish the balance</a>
                             <a href="dashboard.contact.html" class="dropdown-item btn fw-bold sec"><span
                                     class="icon-sm me-2"><i class="fa-solid fa-circle-info"></i></span>Contact the
